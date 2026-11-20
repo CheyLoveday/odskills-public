@@ -1,0 +1,11 @@
+status: experimental
+tags:
+  - mathematics
+  - audit
+examples:
+  - Try to falsify this exact claim and verify any proposed counterexample.
+related:
+  - audit-mathematical-claim
+  - audit-computational-evidence
+  - audit-lean-correspondence
+requirements: []

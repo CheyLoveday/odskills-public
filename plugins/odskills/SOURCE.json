@@ -1,0 +1,334 @@
+{
+  "canonical_files": {
+    "skills/attack-mathematical-claim/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/attack-mathematical-claim/LICENSE"
+    },
+    "skills/attack-mathematical-claim/SKILL.md": {
+      "sha256": "061933cdd675d77240212d390b60806f57ec4b15c06e75432843fc66d17525a7",
+      "source": "skills/mathematics/attack-mathematical-claim/SKILL.md"
+    },
+    "skills/attack-mathematical-claim/metadata.yaml": {
+      "sha256": "e0ff3ae0eaceaf21845c629626f42773adb77f95b51c8641329a05d935e8a18a",
+      "source": "skills/mathematics/attack-mathematical-claim/metadata.yaml"
+    },
+    "skills/audit-computational-evidence/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/audit-computational-evidence/LICENSE"
+    },
+    "skills/audit-computational-evidence/SKILL.md": {
+      "sha256": "a0b25f52147ebaff641c563dbcf88505bae7336bf70a8dee6cf25da8ccdb3f38",
+      "source": "skills/mathematics/audit-computational-evidence/SKILL.md"
+    },
+    "skills/audit-computational-evidence/metadata.yaml": {
+      "sha256": "55cf57866702901aaa6a7c4dadfd24ee0ab99caab88fdfae8fc97668061499b9",
+      "source": "skills/mathematics/audit-computational-evidence/metadata.yaml"
+    },
+    "skills/audit-computational-evidence/references/predicate-and-coverage.md": {
+      "sha256": "3b7892d3e524d4407076e87c3a66cb7c1f2dda7e6a43d91e42d214f6d0e62f65",
+      "source": "skills/mathematics/audit-computational-evidence/references/predicate-and-coverage.md"
+    },
+    "skills/audit-lean-correspondence/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/audit-lean-correspondence/LICENSE"
+    },
+    "skills/audit-lean-correspondence/SKILL.md": {
+      "sha256": "c14b4587bc607b62cefc8eede5bf15290fdf652ad331a917a944fba822f1a935",
+      "source": "skills/mathematics/audit-lean-correspondence/SKILL.md"
+    },
+    "skills/audit-lean-correspondence/metadata.yaml": {
+      "sha256": "6f0ea26ddbdcc51dbaf3931425148b3044cbcf7dc13afb302f0b32c0358405f3",
+      "source": "skills/mathematics/audit-lean-correspondence/metadata.yaml"
+    },
+    "skills/audit-lean-correspondence/references/semantic-checks.md": {
+      "sha256": "644b7b0dc1f780905f35ad2ff4ba9ea5964c308b85e8971bff1c71567dd9c1e9",
+      "source": "skills/mathematics/audit-lean-correspondence/references/semantic-checks.md"
+    },
+    "skills/audit-mathematical-claim/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/audit-mathematical-claim/LICENSE"
+    },
+    "skills/audit-mathematical-claim/SKILL.md": {
+      "sha256": "712d3e983519d9b97e5bcf84b11f4fd32299069a91fcc0ef8447a0015846788c",
+      "source": "skills/mathematics/audit-mathematical-claim/SKILL.md"
+    },
+    "skills/audit-mathematical-claim/metadata.yaml": {
+      "sha256": "c821198b9c23cf369a47f44ab96f054d2cdc96e000ec0ad38b1fcc118f32ab4a",
+      "source": "skills/mathematics/audit-mathematical-claim/metadata.yaml"
+    },
+    "skills/audit-mathematical-claim/references/handoffs.md": {
+      "sha256": "622be95fa6519100c7b64f442bd81eb35db7154e33efd842b742474b045def32",
+      "source": "skills/mathematics/audit-mathematical-claim/references/handoffs.md"
+    },
+    "skills/audit-mathematical-claim/references/inference-boundaries.md": {
+      "sha256": "9abf598f9b97efdb0e938d1ede73cdcbefff3520b718490a3aab7c8e04d79d21",
+      "source": "skills/mathematics/audit-mathematical-claim/references/inference-boundaries.md"
+    },
+    "skills/chey-skill-creator/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/skill-engineering/chey-skill-creator/LICENSE"
+    },
+    "skills/chey-skill-creator/SKILL.md": {
+      "sha256": "ecee3d32b1a39598e54b02d72cde0a9c7d4cb6f07e3a330f303a8179a52570ed",
+      "source": "skills/skill-engineering/chey-skill-creator/SKILL.md"
+    },
+    "skills/chey-skill-creator/metadata.yaml": {
+      "sha256": "ce2d54dfaad5a0fd8e5d6c410636a916e7b2a17b4c16385646f221262deca3db",
+      "source": "skills/skill-engineering/chey-skill-creator/metadata.yaml"
+    },
+    "skills/debug-code-systematically/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/debug-code-systematically/LICENSE"
+    },
+    "skills/debug-code-systematically/SKILL.md": {
+      "sha256": "5e964510559dd996ecc75d34f1bdd8b502805ab36995abfa440964f0606d07ea",
+      "source": "skills/development/debug-code-systematically/SKILL.md"
+    },
+    "skills/debug-code-systematically/metadata.yaml": {
+      "sha256": "e89f8b6bbc6447d0308424b1390e0ea7c2adba10d554eec3a3d25dae526c481e",
+      "source": "skills/development/debug-code-systematically/metadata.yaml"
+    },
+    "skills/derive-structural-invariants/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/derive-structural-invariants/LICENSE"
+    },
+    "skills/derive-structural-invariants/SKILL.md": {
+      "sha256": "6b99410ebf771e2122a2ec9569c16a9013d535477ebf9aefcbc8524a41fd0092",
+      "source": "skills/mathematics/derive-structural-invariants/SKILL.md"
+    },
+    "skills/derive-structural-invariants/metadata.yaml": {
+      "sha256": "61f19d6a8137c2b5586d312b458387abc9ab22e02bd1deb1917b22f43a90d5bd",
+      "source": "skills/mathematics/derive-structural-invariants/metadata.yaml"
+    },
+    "skills/derive-structural-invariants/references/source-quotient-contracts.md": {
+      "sha256": "60106ee415b293421f17bce34c876d72f0ee2291e3e2ee70a1b589ec756febf7",
+      "source": "skills/mathematics/derive-structural-invariants/references/source-quotient-contracts.md"
+    },
+    "skills/design-computational-strategy/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/design-computational-strategy/LICENSE"
+    },
+    "skills/design-computational-strategy/SKILL.md": {
+      "sha256": "0e5fcd1d00f914ee8d3b21bbc3db9b4f575a2f60c486d93917bbef84ae03a6f5",
+      "source": "skills/development/design-computational-strategy/SKILL.md"
+    },
+    "skills/design-computational-strategy/metadata.yaml": {
+      "sha256": "7f7963c186fb3c0ece3f25b8ba31a9f9d364572ffadf315bc74fcaa4b2c4adc6",
+      "source": "skills/development/design-computational-strategy/metadata.yaml"
+    },
+    "skills/design-computational-strategy/references/strategy-mechanisms.md": {
+      "sha256": "460753d71a3ec67d02bdd398fb164fe9f6d2cd1b2a0f1f757e21058dd425dbf2",
+      "source": "skills/development/design-computational-strategy/references/strategy-mechanisms.md"
+    },
+    "skills/functional-core-design/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/functional-core-design/LICENSE"
+    },
+    "skills/functional-core-design/SKILL.md": {
+      "sha256": "041d258b2f80bf33edc9ae4a1e741c0ff473a281cab668163c7b9ab2a830f95c",
+      "source": "skills/development/functional-core-design/SKILL.md"
+    },
+    "skills/functional-core-design/metadata.yaml": {
+      "sha256": "1be402998452dd0a5422be51c3a7ce9bd918845029e2be2567a6cc2e0dbf0925",
+      "source": "skills/development/functional-core-design/metadata.yaml"
+    },
+    "skills/functional-core-design/references/data-modelling.md": {
+      "sha256": "0e435f0114bd91c37d06f91050bd42e8e88f10c5d371e5a7387708f735f5312d",
+      "source": "skills/development/functional-core-design/references/data-modelling.md"
+    },
+    "skills/functional-core-design/references/effect-boundaries.md": {
+      "sha256": "6c2c3c7a5daa7cf433c356c06947ae038b5ca7e28b4b538f76d0ab706cd7169a",
+      "source": "skills/development/functional-core-design/references/effect-boundaries.md"
+    },
+    "skills/functional-core-design/references/refactoring.md": {
+      "sha256": "6a769fdc1e593fa87f03fc8211a9189cdbd1934fc5ab170fa6935c6366f6220e",
+      "source": "skills/development/functional-core-design/references/refactoring.md"
+    },
+    "skills/functional-core-design/references/testing.md": {
+      "sha256": "62ca14d27adbde224d7dc915d0cd1ee78f2be73091bb9b7b6d6dd437a9d438a5",
+      "source": "skills/development/functional-core-design/references/testing.md"
+    },
+    "skills/link-management/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/link-management/LICENSE"
+    },
+    "skills/link-management/SKILL.md": {
+      "sha256": "2ba143a50632d36735a700e4825c203d3bb224819229e62c5a12c6d5260ec031",
+      "source": "skills/development/link-management/SKILL.md"
+    },
+    "skills/link-management/metadata.yaml": {
+      "sha256": "d5eef914ec2f7606af70a1d9ad483361d83ea001cb4b1e71c37e9e558c13e552",
+      "source": "skills/development/link-management/metadata.yaml"
+    },
+    "skills/link-management/requirements.txt": {
+      "sha256": "9843058533e6f6b6232c7cdadc21b96a4b51dab13328f6aed5f42d9fb37cccfc",
+      "source": "skills/development/link-management/requirements.txt"
+    },
+    "skills/link-management/scripts/check_links.py": {
+      "sha256": "a02cd42264914909f29fd8a86348032696e80266284b4beb9bb19dffda3d5173",
+      "source": "skills/development/link-management/scripts/check_links.py"
+    },
+    "skills/plan-development-work/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/plan-development-work/LICENSE"
+    },
+    "skills/plan-development-work/SKILL.md": {
+      "sha256": "f6c4e09d88d165c9cc3accc267902059ddadd20b4a7c4daea2bb46b57f501775",
+      "source": "skills/development/plan-development-work/SKILL.md"
+    },
+    "skills/plan-development-work/assets/pr.md": {
+      "sha256": "616a0004314a8bfacdbf4d6701a2dcadeeb63e5346df5216ce9dfe4b16900905",
+      "source": "skills/development/plan-development-work/assets/pr.md"
+    },
+    "skills/plan-development-work/assets/review.md": {
+      "sha256": "ba430948f18bf0ef14f32c6ab2976770b79f062ef882b565db7cdc3c55eb320d",
+      "source": "skills/development/plan-development-work/assets/review.md"
+    },
+    "skills/plan-development-work/assets/task.md": {
+      "sha256": "cdd2ca036f0435ef7fb404e5e370a57663f94be6b4333254af3d8881ffc1ee81",
+      "source": "skills/development/plan-development-work/assets/task.md"
+    },
+    "skills/plan-development-work/assets/waves.md": {
+      "sha256": "db3020f3d6d96d984de64514c9a6cb885c9969994a3231a0af4c1304e60ba1b3",
+      "source": "skills/development/plan-development-work/assets/waves.md"
+    },
+    "skills/plan-development-work/metadata.yaml": {
+      "sha256": "d93cc074fe9daa47a321413620996fb965b5b167421ad88ae4e69a52e40c1d41",
+      "source": "skills/development/plan-development-work/metadata.yaml"
+    },
+    "skills/prepare-development-handover/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/prepare-development-handover/LICENSE"
+    },
+    "skills/prepare-development-handover/SKILL.md": {
+      "sha256": "f9077addf3fcfb62620db78a0002004b86945c09d55eb9e8480d4908fa071b41",
+      "source": "skills/development/prepare-development-handover/SKILL.md"
+    },
+    "skills/prepare-development-handover/assets/handover.md": {
+      "sha256": "1cee136b07a2dc3b70a88b7db123e32c5cef9299711f9f4bbcf576894088236b",
+      "source": "skills/development/prepare-development-handover/assets/handover.md"
+    },
+    "skills/prepare-development-handover/metadata.yaml": {
+      "sha256": "355dab4cb7f89775e65b4e68f7a395a07bb57df2edf745c838268567a8108d68",
+      "source": "skills/development/prepare-development-handover/metadata.yaml"
+    },
+    "skills/profile-hotspot/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/profile-hotspot/LICENSE"
+    },
+    "skills/profile-hotspot/SKILL.md": {
+      "sha256": "f15989257399e9d66fa53383d5e340c20df5fb39e1dad34871575614b4317bef",
+      "source": "skills/development/profile-hotspot/SKILL.md"
+    },
+    "skills/profile-hotspot/metadata.yaml": {
+      "sha256": "7f1f9529790c349ca20372f10faca59696e79e3c3f72bc280f8addd67b2b0f3f",
+      "source": "skills/development/profile-hotspot/metadata.yaml"
+    },
+    "skills/profile-hotspot/references/benchmark-evidence.md": {
+      "sha256": "a4f8a868a8719e3b2fb471799276a3da93cc07407810a2218389d46ec8f1103f",
+      "source": "skills/development/profile-hotspot/references/benchmark-evidence.md"
+    },
+    "skills/profile-hotspot/references/native-decisions.md": {
+      "sha256": "73bbc07376aa245b109c218d98d2b8da8ec929080794c43fc2424307c8cbfe41",
+      "source": "skills/development/profile-hotspot/references/native-decisions.md"
+    },
+    "skills/profile-lean-kernel/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/profile-lean-kernel/LICENSE"
+    },
+    "skills/profile-lean-kernel/SKILL.md": {
+      "sha256": "0d09806d79ee866482d06312d4693b8ffc8b588b854d84aff3b270e53f8e8492",
+      "source": "skills/development/profile-lean-kernel/SKILL.md"
+    },
+    "skills/profile-lean-kernel/metadata.yaml": {
+      "sha256": "39336bd1c70d133eee2904543f294499864fdcc6e3b3a48f36bbf1229080358d",
+      "source": "skills/development/profile-lean-kernel/metadata.yaml"
+    },
+    "skills/profile-lean-kernel/references/checker-boundaries.md": {
+      "sha256": "8b9219b569602e5826c881a09fe67e926d8fa75536f0829d8b286ced180b7c24",
+      "source": "skills/development/profile-lean-kernel/references/checker-boundaries.md"
+    },
+    "skills/review-code-change/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/review-code-change/LICENSE"
+    },
+    "skills/review-code-change/SKILL.md": {
+      "sha256": "061ecdd14a06e2e433d775b98d27c9c3f143c97f540723287bcbdb876495d07d",
+      "source": "skills/development/review-code-change/SKILL.md"
+    },
+    "skills/review-code-change/metadata.yaml": {
+      "sha256": "e31ef2e51dc6e0b0c8464c5c41609efaf3aed3d4f58260400bb089ad5144f309",
+      "source": "skills/development/review-code-change/metadata.yaml"
+    },
+    "skills/select-code-tests/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/development/select-code-tests/LICENSE"
+    },
+    "skills/select-code-tests/SKILL.md": {
+      "sha256": "b393b78502f4ef104e3f4fbb7b46653ef8df9dceed8dbb032046a44db5c50449",
+      "source": "skills/development/select-code-tests/SKILL.md"
+    },
+    "skills/select-code-tests/metadata.yaml": {
+      "sha256": "b841529aeacfdee3ec783b068aa01c34874e9cda5a4efd21bdef087231dbc660",
+      "source": "skills/development/select-code-tests/metadata.yaml"
+    },
+    "skills/select-code-tests/references/long-running-tests.md": {
+      "sha256": "a8d657ff593caa7b381d85e82aa56a173122c1ca8eda02e21850df284185a7ab",
+      "source": "skills/development/select-code-tests/references/long-running-tests.md"
+    },
+    "skills/select-code-tests/references/test-boundaries.md": {
+      "sha256": "f0c054246c18bb543bffc7c99d0e30aab1bc38b8505d7fd7008758eb97b151ab",
+      "source": "skills/development/select-code-tests/references/test-boundaries.md"
+    },
+    "skills/skill-tester/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/skill-engineering/skill-tester/LICENSE"
+    },
+    "skills/skill-tester/SKILL.md": {
+      "sha256": "52dfe6a0c80f8b4495712fd1cd940117f3ef196d1d6031cf819f154e4788253d",
+      "source": "skills/skill-engineering/skill-tester/SKILL.md"
+    },
+    "skills/skill-tester/assets/test-case.md": {
+      "sha256": "e113572c35463ec3fa247ec9fcf35073764e57c897cb7c2d0a16863a5d1ddd83",
+      "source": "skills/skill-engineering/skill-tester/assets/test-case.md"
+    },
+    "skills/skill-tester/metadata.yaml": {
+      "sha256": "f2a90f2997d70c760f3005ca0e3476f73758bc34bcc6f772078f801af9ec3c8b",
+      "source": "skills/skill-engineering/skill-tester/metadata.yaml"
+    },
+    "skills/skill-tester/requirements.txt": {
+      "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a",
+      "source": "skills/skill-engineering/skill-tester/requirements.txt"
+    },
+    "skills/skill-tester/scripts/check_skill.py": {
+      "sha256": "4f77735cf81f7a166fb3e038aa24e0d10886a0454d8d48c3032ca1b0764b7ea3",
+      "source": "skills/skill-engineering/skill-tester/scripts/check_skill.py"
+    },
+    "skills/write-lean-proofs/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/write-lean-proofs/LICENSE"
+    },
+    "skills/write-lean-proofs/SKILL.md": {
+      "sha256": "4687f228a915e59a7a100da86d2f7995e9c14500ef813dd7352a1bfac549f9d9",
+      "source": "skills/mathematics/write-lean-proofs/SKILL.md"
+    },
+    "skills/write-lean-proofs/metadata.yaml": {
+      "sha256": "796298d70989b34af0a1873888f74866083b40adf147e3010ce51491f329382b",
+      "source": "skills/mathematics/write-lean-proofs/metadata.yaml"
+    },
+    "skills/write-lean-proofs/references/lamport-proof-style.md": {
+      "sha256": "7ddc242aab7b5208eaf7fe8c57da504dbdccaddc8812febf63862ed8ea7c2fbd",
+      "source": "skills/mathematics/write-lean-proofs/references/lamport-proof-style.md"
+    },
+    "skills/write-lean-proofs/references/proof-form-choices.md": {
+      "sha256": "72bb75e886e356243a8d366cbea118776501635953bb975225b92e231bd62c0f",
+      "source": "skills/mathematics/write-lean-proofs/references/proof-form-choices.md"
+    }
+  },
+  "canonical_package_count": 18,
+  "generation_command": "python tools/build_plugin.py --output plugins/odskills",
+  "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
+  "input_sha256": "d8960ae817104087e710680c8482688fda0314c45be9d585e793032f6a8866ee",
+  "schema_version": 1,
+  "version": "0.1.0-experimental.hd8960ae81710"
+}

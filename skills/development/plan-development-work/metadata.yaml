@@ -1,0 +1,15 @@
+status: experimental
+tags:
+  - development-planning
+  - tasks
+  - dependencies
+  - waves
+  - pull-requests
+examples:
+  - Turn this export change into small tasks and dependency-ordered waves with meaningful acceptance checks.
+  - Draft a concise PR description and a review brief from this actual diff and verification evidence.
+  - Organise the remaining work without turning a small fix into a seven-stage programme.
+related:
+  - select-code-tests
+  - review-code-change
+  - prepare-development-handover

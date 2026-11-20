@@ -1,0 +1,14 @@
+status: experimental
+tags:
+  - lean
+  - kernel
+  - profiling
+  - proof-engineering
+examples:
+  - Find the exact Lean checker declaration causing this memory explosion.
+  - Compare a wrapper-level proof rewrite against a projection-unfolding baseline.
+related:
+  - write-lean-proofs
+  - profile-hotspot
+  - audit-lean-correspondence
+requirements: []

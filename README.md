@@ -1,34 +1,55 @@
 # odskills
 
-odskills is a private library of reusable agent workflows for software
-development, mathematics and Lean. Use a portable `SKILL.md` package from an
-authorised source. This repository hosts the public documentation.
+Open, reusable agent skills for software development, mathematics, Lean and
+skill engineering. Each skill is an experimental, portable `SKILL.md` package.
+Browse the [catalogue](catalogue/skills.md) and choose the skill that fits the
+outcome you want.
 
-[Releases](https://github.com/CheyLoveday/odskills-public/releases) is the place
-for public downloads. Skill packages and the plugin are currently private.
+| Area | Examples |
+| --- | --- |
+| Development | Plan work, debug, review changes, verify releases and diagnose bottlenecks. |
+| Mathematics and Lean | Find invariants, attack claims, audit evidence, write proofs and diagnose checker cost. |
+| Skill engineering | Author and test reusable skills. |
+
+```mermaid
+flowchart LR
+    S["Editable skills/"] --> C["Catalogue"]
+    S --> P["Generated plugin package"]
+    S --> T["Pinned project or handoff"]
+```
 
 ## Use one pinned skill
 
-1. **Pin the source.** Select one skill from an authorised checkout at a
-   specific commit or a supplied package at a specific version. For an archive,
-   verify the publisher's checksum before extracting. Keep the skill folder
-   together with its references and helpers.
-2. **Make it available.** In a handoff such as Open Math OS, give the agent the
-   source pin and readable `SKILL.md` path. For native discovery, follow the
-   host's installation instructions and verify the skill in its inventory,
-   such as `/skills` in the Codex CLI.
-3. **Check actual use.** Give the agent a small task with a known result.
-   Check which instructions it read and whether the output meets the expected
-   result. Record verification, discovery or loading, and application separately.
+Check out a reviewed commit or [release tag](https://github.com/CheyLoveday/odskills-public/releases).
+For an explicit handoff, including Open Math OS, give the agent that pin and the
+path to the chosen `SKILL.md`. Make the entire skill folder readable in the task
+workspace.
 
-Keep the previous verified package outside active discovery paths if you
-upgrade. To roll back, restore its pin and check what the host loads.
+For Codex native discovery, start with an empty destination in the consuming
+project. From the odskills checkout, copy one complete package and check its
+bytes. This example selects `write-lean-proofs`.
 
-[Agent instructions](AGENTS.md) · [Support](SUPPORT.md) ·
-[Privacy](PRIVACY.md) · [Terms](TERMS.md) · [MIT licence](LICENSE)
+```sh
+source_package=skills/mathematics/write-lean-proofs
+consumer_skills=/absolute/path/to/consumer/.agents/skills
+destination="$consumer_skills/write-lean-proofs"
+mkdir -p "$consumer_skills" &&
+  mkdir "$destination" &&
+  cp -R "$source_package/." "$destination/" &&
+  python tools/verify_install.py --source "$source_package" --installed "$destination"
+```
 
----
+Start Codex in that project, look for the skill with `/skills`, and try one task
+with a known outcome. Check which instructions were read and the result.
+Record the pin and keep the previous verified package outside discovery paths
+if you upgrade.
 
-Generated, non-authoritative copy from `release/landing/README.md`.
-Regenerate in the maintainer repository with `python tools/build_landing_docs.py --output NEW_DIRECTORY`.
-Source SHA-256: `be630e184f52f23781d6d2bb3e384d84f4f921e5d19c63d9ce2968d930ea8160`.
+## Contribute
+
+Edit the selected package under `skills/<domain>/<id>/`. See the
+[contributor guide](CONTRIBUTING.md) and [agent instructions](AGENTS.md).
+GitHub hosts the canonical source for these skills. ChatGPT directory
+submission is parked.
+
+[MIT licence](LICENSE) · [Notices](NOTICES.md) · [Support](SUPPORT.md) ·
+[Privacy](PRIVACY.md) · [Terms](TERMS.md)

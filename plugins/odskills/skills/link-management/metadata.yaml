@@ -1,0 +1,13 @@
+status: experimental
+tags:
+  - documentation
+  - links
+  - maintenance
+examples:
+  - Repair active repository links after moving these docs into the archive.
+  - Check Markdown references, images and heading anchors without changing frozen history.
+related:
+  - skill-tester
+requirements:
+  - Python 3.12 for the maintained helper checks
+  - markdown-it-py==3.0.0 for the link helper

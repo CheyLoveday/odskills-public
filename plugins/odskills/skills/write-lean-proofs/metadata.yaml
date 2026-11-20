@@ -1,0 +1,13 @@
+status: experimental
+tags:
+  - lean
+  - theorem-proving
+  - formalization
+examples:
+  - Write the universal Rule 110 inductive step and bridge to the specification.
+  - Construct a source-preserving Lean adapter from determinant coordinate lemmas.
+related:
+  - audit-lean-correspondence
+  - derive-structural-invariants
+  - profile-lean-kernel
+requirements: []

@@ -21,10 +21,4 @@ publisher. This policy does not control processing by OpenAI, GitHub, or other
 tools you separately authorize.
 
 Questions or removal requests: [support](SUPPORT.md). Review host settings before
-sharing source and data. Uninstall the plugin to stop using these workflows.
-
----
-
-Generated, non-authoritative copy. Source: `release/PRIVACY.md`.
-Generate with `python tools/build_release.py --version 0.1.0-alpha.1 --output NEW_DIRECTORY`
-(add `--landing-only` for prelaunch pages). Source SHA-256: `76470c60194d5513eab8544ded72ef0adb38f8b0a4fb041ff85aa07a93f10ef5`.
+sharing source and data. Remove the skill from your discovery paths or uninstall it from your host to stop using it.

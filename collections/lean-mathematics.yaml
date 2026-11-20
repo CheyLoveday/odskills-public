@@ -1,0 +1,8 @@
+name: lean-mathematics
+skills:
+  - derive-structural-invariants
+  - write-lean-proofs
+  - profile-lean-kernel
+  - audit-lean-correspondence
+  - audit-computational-evidence
+  - attack-mathematical-claim

@@ -1,0 +1,15 @@
+status: experimental
+tags:
+  - handover
+  - handoff
+  - continuity
+  - evidence
+  - development
+examples:
+  - Hand this unfinished export change to the next session, preserving dirty work and the failing checks.
+  - Check this incoming handover against the actual checkout and identify the next bounded action.
+  - Prepare a concise handoff from the existing plan and receipts without restarting the workflow.
+related:
+  - plan-development-work
+  - review-code-change
+  - select-code-tests

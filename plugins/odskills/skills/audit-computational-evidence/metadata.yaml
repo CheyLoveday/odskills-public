@@ -1,0 +1,11 @@
+status: experimental
+tags:
+  - mathematics
+  - audit
+examples:
+  - Does this finite sieve and certificate support the claimed exclusion?
+related:
+  - audit-mathematical-claim
+  - attack-mathematical-claim
+  - audit-lean-correspondence
+requirements: []

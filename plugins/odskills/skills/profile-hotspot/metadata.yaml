@@ -1,0 +1,15 @@
+status: experimental
+tags:
+  - performance
+  - profiling
+  - python
+  - scientific-computing
+  - optimization
+examples:
+  - Profile this slow exact arithmetic kernel and decide whether Python or C++ is warranted.
+  - We have timing evidence for a numerical method; what should we change before adding JIT?
+  - Is this I/O-heavy pipeline actually limited by Python or should it remain unchanged?
+related:
+  - functional-core-design
+  - select-code-tests
+requirements: []

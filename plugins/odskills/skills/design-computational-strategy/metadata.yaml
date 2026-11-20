@@ -1,0 +1,12 @@
+status: experimental
+tags:
+  - algorithms
+  - representation
+  - scientific-computing
+examples:
+  - We need exact counts rather than all matching pairs; what computation avoids materializing them?
+  - Compare a sparse representation, recurrence and repeated direct evaluation for this workload.
+  - Which small prototype would distinguish these two algorithms before implementation?
+related:
+  - profile-hotspot
+  - select-code-tests

@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "description": "Try to falsify a precise mathematical claim using matched exact examples, boundary cases and authorized bounded searches; distinguish a verified counterexample from a software defect or a bounded negative result. Use to challenge a claim, not merely paraphrase it or certify a proof from passing examples.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Try to falsify this exact claim and verify any proposed counterexample."
+      ],
+      "name": "attack-mathematical-claim",
+      "path": "skills/mathematics/attack-mathematical-claim/SKILL.md",
+      "related": [
+        "audit-mathematical-claim",
+        "audit-computational-evidence",
+        "audit-lean-correspondence"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "audit"
+      ]
+    },
+    {
+      "description": "Audit whether an exact computation or finite certificate supports its stated mathematical claim, checking specification, coverage, independent controls, replay and provenance. Use for mathematical evidence review, not generic test selection, performance tuning or treating a successful run as proof of a broader theorem.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Does this finite sieve and certificate support the claimed exclusion?"
+      ],
+      "name": "audit-computational-evidence",
+      "path": "skills/mathematics/audit-computational-evidence/SKILL.md",
+      "related": [
+        "audit-mathematical-claim",
+        "attack-mathematical-claim",
+        "audit-lean-correspondence"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "audit"
+      ]
+    },
+    {
+      "description": "Check whether a Lean declaration and its proof evidence establish the intended mathematical statement, separating semantic correspondence, axioms and kernel/replay status. Use for paper-to-Lean audits or suspicious formal claims, not routine tactic completion or automatic release certification.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Does this Lean statement mean the same thing as the paper theorem?"
+      ],
+      "name": "audit-lean-correspondence",
+      "path": "skills/mathematics/audit-lean-correspondence/SKILL.md",
+      "related": [
+        "audit-mathematical-claim",
+        "attack-mathematical-claim",
+        "audit-computational-evidence"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "audit"
+      ]
+    },
+    {
+      "description": "Audit a proposed mathematical argument against its exact claim, dependencies and evidence; independently check load-bearing steps and report supported scope, counterexamples or gaps. Use for proof or cross-evidence review, not merely summarizing a proof, discovering a new theorem or granting project acceptance.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Audit this proposed theorem and the dependencies carrying its proof."
+      ],
+      "name": "audit-mathematical-claim",
+      "path": "skills/mathematics/audit-mathematical-claim/SKILL.md",
+      "related": [
+        "attack-mathematical-claim",
+        "audit-computational-evidence",
+        "audit-lean-correspondence"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "audit"
+      ]
+    },
+    {
+      "description": "Create or improve Chey's user-owned reusable skills from real tasks and observed failures, with concise instructions, runnable helpers where useful and explicit behavioral acceptance cases. Use for authoring a skill; use skill-tester for a read-only assessment of an existing skill.",
+      "domain": "skill-engineering",
+      "example_requests": [
+        "Turn this recurring repository task into a focused reusable skill with meaningful acceptance cases.",
+        "Improve this existing skill after a real failure without erasing its invocation policy."
+      ],
+      "name": "chey-skill-creator",
+      "path": "skills/skill-engineering/chey-skill-creator/SKILL.md",
+      "related": [
+        "skill-tester",
+        "link-management"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "skill-authoring",
+        "maintenance",
+        "acceptance-cases"
+      ]
+    },
+    {
+      "description": "Diagnose unclear, recurring or cross-component software failures through reproductions and discriminating checks, then verify a bounded repair. Use when a cause is uncertain or an attempted repair failed; not for every understood typo, expected negative test, performance study or mathematical proof gap.",
+      "domain": "development",
+      "example_requests": [
+        "This CLI disagrees with its passing unit tests; investigate where the result changes.",
+        "The first repair did not fix the intermittent failure. Distinguish likely causes before changing more code.",
+        "Diagnose this exception across the parser and cache, then verify the smallest repair."
+      ],
+      "name": "debug-code-systematically",
+      "path": "skills/development/debug-code-systematically/SKILL.md",
+      "related": [
+        "select-code-tests"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "debugging",
+        "diagnosis",
+        "regression"
+      ]
+    },
+    {
+      "description": "Discover source-coupled invariants, exact representations and reusable lemmas for mathematical research or formalization. Use when transferring mathematical structures across problems; not for routine Lean tactic repair, performance profiling or claiming a conjecture is solved.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Find the source-coupled invariants linking two Pell traces of a powerful triple.",
+        "Transfer a Rule 110 predictive quotient to a precise arithmetic projection."
+      ],
+      "name": "derive-structural-invariants",
+      "path": "skills/mathematics/derive-structural-invariants/SKILL.md",
+      "related": [
+        "write-lean-proofs",
+        "audit-mathematical-claim",
+        "attack-mathematical-claim"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "invariants",
+        "diophantine",
+        "formal-methods"
+      ]
+    },
+    {
+      "description": "Design algorithms and representations for a concrete computational task by identifying structure, comparing costs and choosing a discriminating prototype. Use before committing to an approach or when unnecessary work dominates; not for a measured profiling investigation, proof certification or routine implementation of an already chosen algorithm.",
+      "domain": "development",
+      "example_requests": [
+        "We need exact counts rather than all matching pairs; what computation avoids materializing them?",
+        "Compare a sparse representation, recurrence and repeated direct evaluation for this workload.",
+        "Which small prototype would distinguish these two algorithms before implementation?"
+      ],
+      "name": "design-computational-strategy",
+      "path": "skills/development/design-computational-strategy/SKILL.md",
+      "related": [
+        "profile-hotspot",
+        "select-code-tests"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "algorithms",
+        "representation",
+        "scientific-computing"
+      ]
+    },
+    {
+      "description": "Design or refactor Python and scientific software into a functional core and imperative shell (FCIS) when domain logic is tangled with I/O or hidden state. Use for software boundary design; exclude conceptual explanations, tests of already-pure functions, and operations runbooks.",
+      "domain": "development",
+      "example_requests": [
+        "Refactor this Python source intake so selection is pure and file reads stay at the boundary.",
+        "This function mixes pandas transformations and database writes; separate the decisions from effects.",
+        "How should I structure a reusable analysis pipeline without hidden state?"
+      ],
+      "name": "functional-core-design",
+      "path": "skills/development/functional-core-design/SKILL.md",
+      "related": [],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "architecture",
+        "python",
+        "functional-programming",
+        "scientific-computing",
+        "testing"
+      ]
+    },
+    {
+      "description": "Audit and repair repository Markdown links, images and section anchors after edits, file moves, renames, archive changes or handovers. Use to find inbound references and add a repeatable link gate to existing checks. Preserve frozen sources; external URL reachability and visual rendering need separate checks.",
+      "domain": "development",
+      "example_requests": [
+        "Repair active repository links after moving these docs into the archive.",
+        "Check Markdown references, images and heading anchors without changing frozen history."
+      ],
+      "name": "link-management",
+      "path": "skills/development/link-management/SKILL.md",
+      "related": [
+        "skill-tester"
+      ],
+      "requirements": [
+        "Python 3.12 for the maintained helper checks",
+        "markdown-it-py==3.0.0 for the link helper"
+      ],
+      "status": "experimental",
+      "tags": [
+        "documentation",
+        "links",
+        "maintenance"
+      ]
+    },
+    {
+      "description": "Turn a development objective into scoped tasks, dependency-ordered waves, acceptance checks and requested PR or review briefs. Use for actionable development planning or evidence-backed closeout writing; not for implementing the change, reviewing an actual diff or preparing a current-state handover alone.",
+      "domain": "development",
+      "example_requests": [
+        "Turn this export change into small tasks and dependency-ordered waves with meaningful acceptance checks.",
+        "Draft a concise PR description and a review brief from this actual diff and verification evidence.",
+        "Organise the remaining work without turning a small fix into a seven-stage programme."
+      ],
+      "name": "plan-development-work",
+      "path": "skills/development/plan-development-work/SKILL.md",
+      "related": [
+        "select-code-tests",
+        "review-code-change",
+        "prepare-development-handover"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "development-planning",
+        "tasks",
+        "dependencies",
+        "waves",
+        "pull-requests"
+      ]
+    },
+    {
+      "description": "Prepare or reconcile a resumable development handover from actual repository state, artifacts and verification evidence, preserving dirty work, unresolved failures and the next bounded action. Use for handing off or pausing ongoing work; not for speculative planning alone, causal session review or automatically resuming execution.",
+      "domain": "development",
+      "example_requests": [
+        "Hand this unfinished export change to the next session, preserving dirty work and the failing checks.",
+        "Check this incoming handover against the actual checkout and identify the next bounded action.",
+        "Prepare a concise handoff from the existing plan and receipts without restarting the workflow."
+      ],
+      "name": "prepare-development-handover",
+      "path": "skills/development/prepare-development-handover/SKILL.md",
+      "related": [
+        "plan-development-work",
+        "review-code-change",
+        "select-code-tests"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "handover",
+        "handoff",
+        "continuity",
+        "evidence",
+        "development"
+      ]
+    },
+    {
+      "description": "Diagnose measured runtime or memory bottlenecks in Python and scientific code and select a correctness-preserving improvement, including whether vectorization, JIT, an existing native library or C++ is justified. Use for a concrete performance problem; not speculative refactoring, test selection or an abstract language comparison.",
+      "domain": "development",
+      "example_requests": [
+        "Profile this slow exact arithmetic kernel and decide whether Python or C++ is warranted.",
+        "We have timing evidence for a numerical method; what should we change before adding JIT?",
+        "Is this I/O-heavy pipeline actually limited by Python or should it remain unchanged?"
+      ],
+      "name": "profile-hotspot",
+      "path": "skills/development/profile-hotspot/SKILL.md",
+      "related": [
+        "functional-core-design",
+        "select-code-tests"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "performance",
+        "profiling",
+        "python",
+        "scientific-computing",
+        "optimization"
+      ]
+    },
+    {
+      "description": "Isolate and improve a measured Lean elaboration, export or independent kernel-checker bottleneck using same-source controls and proof-form ablations. Use for Lean memory, time or reduction explosions; not routine theorem completion or weakening mathematics to force a pass.",
+      "domain": "development",
+      "example_requests": [
+        "Find the exact Lean checker declaration causing this memory explosion.",
+        "Compare a wrapper-level proof rewrite against a projection-unfolding baseline."
+      ],
+      "name": "profile-lean-kernel",
+      "path": "skills/development/profile-lean-kernel/SKILL.md",
+      "related": [
+        "write-lean-proofs",
+        "profile-hotspot",
+        "audit-lean-correspondence"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "lean",
+        "kernel",
+        "profiling",
+        "proof-engineering"
+      ]
+    },
+    {
+      "description": "Review an actual code change against its intended behavior for correctness, regressions, failure paths and discriminating tests, returning evidence-backed findings. Use for a separate review pass on a diff or snapshot; not an implementation summary, automatic repair, dedicated security audit or mathematical proof review.",
+      "domain": "development",
+      "example_requests": [
+        "Review this diff for regressions and verify that the tests could catch the important failures.",
+        "Check this local change against the public CLI contract; give findings without editing it.",
+        "Take a separate review pass over the cache repair and its error paths."
+      ],
+      "name": "review-code-change",
+      "path": "skills/development/review-code-change/SKILL.md",
+      "related": [
+        "select-code-tests",
+        "debug-code-systematically",
+        "plan-development-work",
+        "prepare-development-handover"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "code-review",
+        "compatibility",
+        "failure-paths"
+      ]
+    },
+    {
+      "description": "Select proportionate unit, integration, CLI, installed-package and end-to-end verification for a concrete software change, distinguishing iteration checks from acceptance gates. Use when asked what to test or whether checks are sufficient; not for writing one already-specified test, mathematical proof verification or deployment.",
+      "domain": "development",
+      "example_requests": [
+        "Which unit and CLI tests should I run for this parser change before calling it verified?",
+        "The library passes source-tree tests; what installed-wheel smoke test is missing?",
+        "My suite is slow. Which checks can be focused during iteration without dropping acceptance coverage?"
+      ],
+      "name": "select-code-tests",
+      "path": "skills/development/select-code-tests/SKILL.md",
+      "related": [
+        "functional-core-design",
+        "plan-development-work",
+        "prepare-development-handover"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "testing",
+        "software-engineering",
+        "regression",
+        "integration",
+        "reproducibility"
+      ]
+    },
+    {
+      "description": "Test a selected skill against realistic tasks, negative controls, scope boundaries and observable artifacts. Use for skill evaluation, regression checks or a read-only review; distinguish static validity, helper behavior and fresh-agent behavior. Do not redesign or execute an untrusted skill's scripts without the selected authority.",
+      "domain": "skill-engineering",
+      "example_requests": [
+        "Review this candidate skill read-only and distinguish static checks from actual behavior.",
+        "Test this selected trusted skill helper on positive and adverse fixtures."
+      ],
+      "name": "skill-tester",
+      "path": "skills/skill-engineering/skill-tester/SKILL.md",
+      "related": [
+        "chey-skill-creator",
+        "link-management"
+      ],
+      "requirements": [
+        "Python 3.12 for the maintained helper checks",
+        "PyYAML==6.0.3 for the static helper"
+      ],
+      "status": "experimental",
+      "tags": [
+        "skill-evaluation",
+        "static-validation",
+        "behavior"
+      ]
+    },
+    {
+      "description": "Construct or repair a Lean theorem and its exact semantic bridge using composable lemmas, structural induction and explicit proof obligations. Use for actual Lean proof writing; not independent correspondence audit, open-ended mathematical discovery or performance profiling alone.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Write the universal Rule 110 inductive step and bridge to the specification.",
+        "Construct a source-preserving Lean adapter from determinant coordinate lemmas."
+      ],
+      "name": "write-lean-proofs",
+      "path": "skills/mathematics/write-lean-proofs/SKILL.md",
+      "related": [
+        "audit-lean-correspondence",
+        "derive-structural-invariants",
+        "profile-lean-kernel"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "lean",
+        "theorem-proving",
+        "formalization"
+      ]
+    }
+  ]
+}

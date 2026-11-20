@@ -1,0 +1,11 @@
+status: experimental
+tags:
+  - debugging
+  - diagnosis
+  - regression
+examples:
+  - This CLI disagrees with its passing unit tests; investigate where the result changes.
+  - The first repair did not fix the intermittent failure. Distinguish likely causes before changing more code.
+  - Diagnose this exception across the parser and cache, then verify the smallest repair.
+related:
+  - select-code-tests

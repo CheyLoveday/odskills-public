@@ -1,0 +1,14 @@
+status: experimental
+tags:
+  - skill-evaluation
+  - static-validation
+  - behavior
+examples:
+  - Review this candidate skill read-only and distinguish static checks from actual behavior.
+  - Test this selected trusted skill helper on positive and adverse fixtures.
+related:
+  - chey-skill-creator
+  - link-management
+requirements:
+  - Python 3.12 for the maintained helper checks
+  - PyYAML==6.0.3 for the static helper

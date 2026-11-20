@@ -1,0 +1,16 @@
+status: experimental
+tags:
+  - testing
+  - software-engineering
+  - regression
+  - integration
+  - reproducibility
+examples:
+  - Which unit and CLI tests should I run for this parser change before calling it verified?
+  - The library passes source-tree tests; what installed-wheel smoke test is missing?
+  - My suite is slow. Which checks can be focused during iteration without dropping acceptance coverage?
+related:
+  - functional-core-design
+  - plan-development-work
+  - prepare-development-handover
+requirements: []

@@ -1,0 +1,11 @@
+status: experimental
+tags:
+  - skill-authoring
+  - maintenance
+  - acceptance-cases
+examples:
+  - Turn this recurring repository task into a focused reusable skill with meaningful acceptance cases.
+  - Improve this existing skill after a real failure without erasing its invocation policy.
+related:
+  - skill-tester
+  - link-management

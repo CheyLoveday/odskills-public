@@ -1,0 +1,625 @@
+[
+  {
+    "id": "fcis-direct-1",
+    "prompt": "Refactor this Python source intake so file selection is pure and filesystem operations stay in a small shell.",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "Direct FCIS refactoring of domain selection and effects"
+  },
+  {
+    "id": "fcis-direct-2",
+    "prompt": "Design the functional core and imperative shell for this reproducible bioinformatics pipeline.",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "Explicit FCIS architecture request"
+  },
+  {
+    "id": "fcis-indirect-1",
+    "prompt": "This pandas function computes a score and writes to Postgres in the same loop. Can you separate those responsibilities?",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "Implicit effect isolation and scientific data preservation"
+  },
+  {
+    "id": "fcis-indirect-2",
+    "prompt": "Our functions use globals and the clock, making unit tests nondeterministic. Restructure the smallest necessary part.",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "Hidden effects and deterministic testability"
+  },
+  {
+    "id": "fcis-incomplete-1",
+    "prompt": "Our data processing code mixes calculations with file writes. Please separate them; I have not shared the module yet.",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "The workflow applies, but the agent needs the module and public contract before proposing a code change"
+  },
+  {
+    "id": "fcis-nearmiss-1",
+    "prompt": "Can you explain what an imperative shell means in functional programming, without writing or modifying code?",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Conceptual explanation, not design/refactor workflow"
+  },
+  {
+    "id": "fcis-nearmiss-2",
+    "prompt": "Write a unit test for one already pure arithmetic function, no architecture changes.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Narrow test writing alone does not require FCIS refactor workflow"
+  },
+  {
+    "id": "fcis-nearmiss-3",
+    "prompt": "Speed up this already-pure NumPy calculation while preserving its array inputs and results. It has no I/O or hidden state, and needs no architecture change.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Performance work on already-pure computation does not need an effect-boundary redesign"
+  },
+  {
+    "id": "fcis-nearmiss-4",
+    "prompt": "Fix the off-by-one bug in this pure list-slicing helper. Keep its public interface; no architectural refactor is needed.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "An ordinary local bug fix without tangled effects is outside the FCIS design workflow"
+  },
+  {
+    "id": "fcis-negative-1",
+    "prompt": "Summarise this mathematical proof of a Pell equation.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Pure mathematical review"
+  },
+  {
+    "id": "fcis-negative-2",
+    "prompt": "Prepare a deployment rollback runbook for Modal.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Operational runbook, not code design"
+  },
+  {
+    "id": "fcis-negative-3",
+    "prompt": "Rewrite this investor update email more concisely.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Writing task"
+  },
+  {
+    "id": "fcis-negative-4",
+    "prompt": "Review the latest UK weather forecast for tomorrow.",
+    "target_skill": "functional-core-design",
+    "should_activate": false,
+    "reason": "Weather information task"
+  },
+  {
+    "id": "fcis-boundary-1",
+    "prompt": "Evaluate whether the current source selection boundary opens unselected .env files and propose a minimal pure selector.",
+    "target_skill": "functional-core-design",
+    "should_activate": true,
+    "reason": "Architectural audit and targeted pure boundary proposal"
+  },
+  {
+    "id": "test-direct",
+    "prompt": "What unit, CLI and installed-package tests should I select for the new public parser?",
+    "target_skill": "select-code-tests",
+    "should_activate": true,
+    "reason": "Selects tests for a concrete software change"
+  },
+  {
+    "id": "test-indirect",
+    "prompt": "Our Python suite passes, but how do we know the built wheel works for users?",
+    "target_skill": "select-code-tests",
+    "should_activate": true,
+    "reason": "Real installed artifact verification"
+  },
+  {
+    "id": "test-slow",
+    "prompt": "Our test suite is slow and our impact selection might omit cases; plan the appropriate checks.",
+    "target_skill": "select-code-tests",
+    "should_activate": true,
+    "reason": "Measured tests and fallback contract"
+  },
+  {
+    "id": "test-negative",
+    "prompt": "Write just this one already specified unit test for a pure helper; don't plan the broader suite.",
+    "target_skill": "select-code-tests",
+    "should_activate": false,
+    "reason": "Simple single-test edit does not require selection workflow"
+  },
+  {
+    "id": "test-negative-maths",
+    "prompt": "Give a purely mathematical proof of a Pell equation result.",
+    "target_skill": "select-code-tests",
+    "should_activate": false,
+    "reason": "Maths theorem rather than code testing"
+  },
+  {
+    "id": "test-negative-profile",
+    "prompt": "Profile the inner loop of an already well-tested numerical kernel, no new tests needed.",
+    "target_skill": "select-code-tests",
+    "should_activate": false,
+    "reason": "Performance diagnosis rather than testing selection"
+  },
+  {
+    "id": "profile-direct",
+    "prompt": "Profile this slow exact integer algorithm and decide whether a small native kernel is worth it.",
+    "target_skill": "profile-hotspot",
+    "should_activate": true,
+    "reason": "Measured bottleneck and native tradeoff"
+  },
+  {
+    "id": "profile-indirect",
+    "prompt": "My Python program waits on disk reads all day. Can changing the language help?",
+    "target_skill": "profile-hotspot",
+    "should_activate": true,
+    "reason": "Bottleneck diagnosis, including no-change"
+  },
+  {
+    "id": "profile-jit",
+    "prompt": "Our JIT path is fast when warm but slow on the first run; evaluate the real runtime.",
+    "target_skill": "profile-hotspot",
+    "should_activate": true,
+    "reason": "Cold-warm performance analysis"
+  },
+  {
+    "id": "profile-negative",
+    "prompt": "Refactor the functions into a functional core; there is no performance complaint.",
+    "target_skill": "profile-hotspot",
+    "should_activate": false,
+    "reason": "FCIS refactor rather than profiling"
+  },
+  {
+    "id": "profile-negative-tests",
+    "prompt": "Which integration tests are needed for this CLI's exit-code change?",
+    "target_skill": "profile-hotspot",
+    "should_activate": false,
+    "reason": "Test strategy, not optimization"
+  },
+  {
+    "id": "profile-negative-theorem",
+    "prompt": "Check whether this proof is logically valid; there is no code or performance task.",
+    "target_skill": "profile-hotspot",
+    "should_activate": false,
+    "reason": "Pure mathematical proof"
+  },
+  {
+    "id": "audit-mathematical-claim-direct",
+    "prompt": "Audit this proposed theorem and the dependencies carrying its proof.",
+    "target_skill": "audit-mathematical-claim",
+    "should_activate": true,
+    "reason": "Matches the declared audit outcome"
+  },
+  {
+    "id": "audit-mathematical-claim-incomplete",
+    "prompt": "Audit this proposed theorem and the dependencies carrying its proof. I have not supplied the relevant source yet.",
+    "target_skill": "audit-mathematical-claim",
+    "should_activate": true,
+    "reason": "Relevant workflow, but indispensable source remains missing; do not invent an audit"
+  },
+  {
+    "id": "audit-mathematical-claim-negative",
+    "prompt": "Only paraphrase this mathematical paragraph; do not verify or challenge it.",
+    "target_skill": "audit-mathematical-claim",
+    "should_activate": false,
+    "reason": "Explanation/editing without an audit outcome"
+  },
+  {
+    "id": "attack-mathematical-claim-direct",
+    "prompt": "Try to falsify this exact claim and verify any proposed counterexample.",
+    "target_skill": "attack-mathematical-claim",
+    "should_activate": true,
+    "reason": "Matches the declared audit outcome"
+  },
+  {
+    "id": "attack-mathematical-claim-incomplete",
+    "prompt": "Try to falsify this exact claim and verify any proposed counterexample. I have not supplied the relevant source yet.",
+    "target_skill": "attack-mathematical-claim",
+    "should_activate": true,
+    "reason": "Relevant workflow, but indispensable source remains missing; do not invent an audit"
+  },
+  {
+    "id": "attack-mathematical-claim-negative",
+    "prompt": "Only paraphrase this mathematical paragraph; do not verify or challenge it.",
+    "target_skill": "attack-mathematical-claim",
+    "should_activate": false,
+    "reason": "Explanation/editing without an audit outcome"
+  },
+  {
+    "id": "audit-computational-evidence-direct",
+    "prompt": "Does this finite sieve and certificate support the claimed exclusion?",
+    "target_skill": "audit-computational-evidence",
+    "should_activate": true,
+    "reason": "Matches the declared audit outcome"
+  },
+  {
+    "id": "audit-computational-evidence-incomplete",
+    "prompt": "Does this finite sieve and certificate support the claimed exclusion? I have not supplied the relevant source yet.",
+    "target_skill": "audit-computational-evidence",
+    "should_activate": true,
+    "reason": "Relevant workflow, but indispensable source remains missing; do not invent an audit"
+  },
+  {
+    "id": "audit-computational-evidence-negative",
+    "prompt": "Only paraphrase this mathematical paragraph; do not verify or challenge it.",
+    "target_skill": "audit-computational-evidence",
+    "should_activate": false,
+    "reason": "Explanation/editing without an audit outcome"
+  },
+  {
+    "id": "audit-lean-correspondence-direct",
+    "prompt": "Does this Lean statement mean the same thing as the paper theorem?",
+    "target_skill": "audit-lean-correspondence",
+    "should_activate": true,
+    "reason": "Matches the declared audit outcome"
+  },
+  {
+    "id": "audit-lean-correspondence-incomplete",
+    "prompt": "Does this Lean statement mean the same thing as the paper theorem? I have not supplied the relevant source yet.",
+    "target_skill": "audit-lean-correspondence",
+    "should_activate": true,
+    "reason": "Relevant workflow, but indispensable source remains missing; do not invent an audit"
+  },
+  {
+    "id": "audit-lean-correspondence-negative",
+    "prompt": "Only paraphrase this mathematical paragraph; do not verify or challenge it.",
+    "target_skill": "audit-lean-correspondence",
+    "should_activate": false,
+    "reason": "Explanation/editing without an audit outcome"
+  },
+  {
+    "id": "strategy-direct",
+    "prompt": "Compare algorithms and representations for exact repeated count queries before we implement.",
+    "target_skill": "design-computational-strategy",
+    "should_activate": true,
+    "reason": "Concrete computational design with output and reuse trade-offs"
+  },
+  {
+    "id": "strategy-indirect",
+    "prompt": "This program lists a huge number of matching objects but users only need a count. Can we avoid generating them?",
+    "target_skill": "design-computational-strategy",
+    "should_activate": true,
+    "reason": "Output-aware structural alternative, without a measured profiling prerequisite"
+  },
+  {
+    "id": "strategy-incomplete",
+    "prompt": "Choose a numerical algorithm for our solver, but we have not supplied the accuracy or input range.",
+    "target_skill": "design-computational-strategy",
+    "should_activate": true,
+    "reason": "Relevant decision with missing contract; conditional design rather than fabricated guarantees"
+  },
+  {
+    "id": "strategy-nearmiss",
+    "prompt": "Measure the cold and warm cost of this already selected and implemented JIT kernel.",
+    "target_skill": "design-computational-strategy",
+    "should_activate": false,
+    "reason": "Measured profiling rather than choosing an algorithm"
+  },
+  {
+    "id": "strategy-negative",
+    "prompt": "Implement this specified binary search exactly; the algorithm is already selected.",
+    "target_skill": "design-computational-strategy",
+    "should_activate": false,
+    "reason": "Routine implementation needs no strategy comparison"
+  },
+  {
+    "id": "debug-direct",
+    "prompt": "Our first repair failed and this CLI still returns inconsistent totals. Investigate competing causes and fix it.",
+    "target_skill": "debug-code-systematically",
+    "should_activate": true,
+    "reason": "Unclear recurring software failure"
+  },
+  {
+    "id": "debug-indirect",
+    "prompt": "The parser unit test passes but the command drops some records; work out where the discrepancy starts.",
+    "target_skill": "debug-code-systematically",
+    "should_activate": true,
+    "reason": "Public-path failure needs boundary diagnosis"
+  },
+  {
+    "id": "debug-incomplete",
+    "prompt": "Diagnose a recurring exception; we still need to retrieve the triggering input and logs.",
+    "target_skill": "debug-code-systematically",
+    "should_activate": true,
+    "reason": "Workflow applies but cause cannot be certified without evidence"
+  },
+  {
+    "id": "debug-nearmiss",
+    "prompt": "Fix the obvious misspelling in this local variable; the cause is understood.",
+    "target_skill": "debug-code-systematically",
+    "should_activate": false,
+    "reason": "Understood local correction does not require the investigation workflow"
+  },
+  {
+    "id": "debug-negative",
+    "prompt": "This negative test correctly raises ValueError. Only explain the assertion.",
+    "target_skill": "debug-code-systematically",
+    "should_activate": false,
+    "reason": "Expected negative-test behavior is not a defect"
+  },
+  {
+    "id": "review-direct",
+    "prompt": "Review this diff against the public contract for regressions without changing the code.",
+    "target_skill": "review-code-change",
+    "should_activate": true,
+    "reason": "Separate code review outcome"
+  },
+  {
+    "id": "review-indirect",
+    "prompt": "The author says this new writer is safer; check the actual change and whether tests catch data loss.",
+    "target_skill": "review-code-change",
+    "should_activate": true,
+    "reason": "Evidence-backed review rather than trusting the implementation summary"
+  },
+  {
+    "id": "review-incomplete",
+    "prompt": "Review the patch, but so far I have only shared its summary.",
+    "target_skill": "review-code-change",
+    "should_activate": true,
+    "reason": "Relevant workflow with missing actual diff, no invented reviewed code"
+  },
+  {
+    "id": "review-nearmiss",
+    "prompt": "Summarize these edits for a changelog; no review requested.",
+    "target_skill": "review-code-change",
+    "should_activate": false,
+    "reason": "Implementation summary rather than defect review"
+  },
+  {
+    "id": "review-negative",
+    "prompt": "Audit whether this Lean theorem matches the paper statement, without any code change.",
+    "target_skill": "review-code-change",
+    "should_activate": false,
+    "reason": "Formal correspondence specialist owns that outcome"
+  },
+  {
+    "id": "creator-direct",
+    "prompt": "Create a focused reusable skill from this recurring repository task.",
+    "target_skill": "chey-skill-creator",
+    "should_activate": true,
+    "reason": "Author a concrete outcome with acceptance cases"
+  },
+  {
+    "id": "creator-update",
+    "prompt": "Improve this skill after the observed failure and preserve its existing invocation policy.",
+    "target_skill": "chey-skill-creator",
+    "should_activate": true,
+    "reason": "Targeted package update without reinitialization"
+  },
+  {
+    "id": "creator-incomplete",
+    "prompt": "Create a reusable skill, but we still need to choose the actual operation and completion condition.",
+    "target_skill": "chey-skill-creator",
+    "should_activate": true,
+    "reason": "Relevant authoring task with missing outcome, not authority to fabricate a package"
+  },
+  {
+    "id": "creator-review-negative",
+    "prompt": "Only assess this existing skill read-only; do not change or install it.",
+    "target_skill": "chey-skill-creator",
+    "should_activate": false,
+    "reason": "Assessment belongs to skill-tester"
+  },
+  {
+    "id": "creator-concept-negative",
+    "prompt": "Explain what a Codex skill is; do not create or modify anything.",
+    "target_skill": "chey-skill-creator",
+    "should_activate": false,
+    "reason": "Conceptual explanation only"
+  },
+  {
+    "id": "tester-direct",
+    "prompt": "Evaluate this skill on realistic tasks and distinguish structural, helper and fresh-agent evidence.",
+    "target_skill": "skill-tester",
+    "should_activate": true,
+    "reason": "Selected skill assessment"
+  },
+  {
+    "id": "tester-helper",
+    "prompt": "Test this explicitly trusted skill helper on a valid fixture and a meaningful failure.",
+    "target_skill": "skill-tester",
+    "should_activate": true,
+    "reason": "Authorised helper lane with adverse controls"
+  },
+  {
+    "id": "tester-incomplete",
+    "prompt": "Review the skill but its source has not been supplied yet.",
+    "target_skill": "skill-tester",
+    "should_activate": true,
+    "reason": "Relevant assessment blocked on actual source"
+  },
+  {
+    "id": "tester-create-negative",
+    "prompt": "Create a new skill from this workflow; no existing skill is being evaluated.",
+    "target_skill": "skill-tester",
+    "should_activate": false,
+    "reason": "Authoring owns the immediate outcome"
+  },
+  {
+    "id": "tester-unit-negative",
+    "prompt": "Write this one specified arithmetic unit test; there is no skill package to assess.",
+    "target_skill": "skill-tester",
+    "should_activate": false,
+    "reason": "Ordinary software test rather than skill evaluation"
+  },
+  {
+    "id": "links-direct",
+    "prompt": "Repair repository links and anchors after moving these documents into an archive.",
+    "target_skill": "link-management",
+    "should_activate": true,
+    "reason": "Inbound path and anchor repair"
+  },
+  {
+    "id": "links-audit",
+    "prompt": "Check local Markdown references, images and duplicate heading anchors on this selected reader surface.",
+    "target_skill": "link-management",
+    "should_activate": true,
+    "reason": "Read-only local path/anchor audit"
+  },
+  {
+    "id": "links-incomplete",
+    "prompt": "Audit our repository reading links once the repository and intended active readers are available.",
+    "target_skill": "link-management",
+    "should_activate": true,
+    "reason": "Relevant task with missing scope, not an empty successful scan"
+  },
+  {
+    "id": "links-external-negative",
+    "prompt": "Only check whether these live external websites are reachable right now.",
+    "target_skill": "link-management",
+    "should_activate": false,
+    "reason": "External reachability is a different check"
+  },
+  {
+    "id": "links-render-negative",
+    "prompt": "Visually inspect the PDF typesetting; no repository navigation is involved.",
+    "target_skill": "link-management",
+    "should_activate": false,
+    "reason": "Visual rendering does not use local Markdown link checks"
+  },
+  {
+    "id": "plan-development-work-direct",
+    "prompt": "Plan this export change as small tasks and dependency-ordered waves with positive and adverse checks.",
+    "target_skill": "plan-development-work",
+    "should_activate": true,
+    "reason": "Actionable bounded development planning"
+  },
+  {
+    "id": "plan-development-work-indirect",
+    "prompt": "Turn the remaining parser work into owned deliverables, prerequisites and observable completion gates.",
+    "target_skill": "plan-development-work",
+    "should_activate": true,
+    "reason": "Outcome and dependency organisation without requiring fixed waves"
+  },
+  {
+    "id": "plan-development-work-pr",
+    "prompt": "Draft a concise PR description and review request from this diff and the verification receipts.",
+    "target_skill": "plan-development-work",
+    "should_activate": true,
+    "reason": "Requested evidence-backed closeout documents"
+  },
+  {
+    "id": "plan-development-work-incomplete",
+    "prompt": "Write the implementation plan for our import change; the source module is not available yet.",
+    "target_skill": "plan-development-work",
+    "should_activate": true,
+    "reason": "Planning applies but implementation details remain conditional on unavailable source"
+  },
+  {
+    "id": "plan-development-work-review-control",
+    "prompt": "Review this existing code diff for a partial-write regression; do not make a future work plan.",
+    "target_skill": "plan-development-work",
+    "should_activate": false,
+    "reason": "Actual code review belongs to the reviewer specialist"
+  },
+  {
+    "id": "plan-development-work-handover-control",
+    "prompt": "Hand this dirty checkout to the next session using the existing adequate plan and failures.",
+    "target_skill": "plan-development-work",
+    "should_activate": false,
+    "reason": "Current-state handover does not require new planning"
+  },
+  {
+    "id": "prepare-development-handover-direct",
+    "prompt": "Prepare a resumable handover for this unfinished branch, keeping dirty files and failed checks visible.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": true,
+    "reason": "Transfer actual development state and continuation constraints"
+  },
+  {
+    "id": "prepare-development-handover-incoming",
+    "prompt": "Compare this incoming handoff with the checkout: its old CI pass may predate current edits.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": true,
+    "reason": "Reconcile supplied claims against current primary state"
+  },
+  {
+    "id": "prepare-development-handover-existing-plan",
+    "prompt": "Use the existing plan and retained receipts to hand the remaining work to another session.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": true,
+    "reason": "Consume a valid prerequisite rather than regenerating it"
+  },
+  {
+    "id": "prepare-development-handover-incomplete",
+    "prompt": "Prepare a handover from these saved logs; the live remote and deployment are inaccessible.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": true,
+    "reason": "Available state can be transferred while dependent live facts remain unknown"
+  },
+  {
+    "id": "prepare-development-handover-planning-control",
+    "prompt": "Design future tasks and wave dependencies for a feature that has not been started.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": false,
+    "reason": "Speculative future planning alone is a different outcome"
+  },
+  {
+    "id": "prepare-development-handover-session-control",
+    "prompt": "Explain causally why an earlier coding session missed a bug, using its transcript and original diff.",
+    "target_skill": "prepare-development-handover",
+    "should_activate": false,
+    "reason": "Causal session review is outside a resumable state handover"
+  },
+  {
+    "id": "structural-e364",
+    "prompt": "Find the common-source invariant that couples the two Pell trace projections of one powerful triple.",
+    "target_skill": "derive-structural-invariants",
+    "should_activate": true,
+    "reason": "Structural invariants require one globally shared mathematical source"
+  },
+  {
+    "id": "structural-rule110",
+    "prompt": "Find a predictive quotient from Rule 110 that preserves the evolution law and state its lifting assumptions.",
+    "target_skill": "derive-structural-invariants",
+    "should_activate": true,
+    "reason": "Discover an exact source-to-quotient mathematical bridge"
+  },
+  {
+    "id": "structural-control",
+    "prompt": "Fix this Lean tactic line where a typed equality is already known.",
+    "target_skill": "derive-structural-invariants",
+    "should_activate": false,
+    "reason": "Routine proof repair is handled by write-lean-proofs"
+  },
+  {
+    "id": "lean-proof-rec",
+    "prompt": "Write a Lean induction proving every Rule 110 evolution depth agrees with the frozen specification.",
+    "target_skill": "write-lean-proofs",
+    "should_activate": true,
+    "reason": "Universal theorem construction and exact spec bridge"
+  },
+  {
+    "id": "lean-proof-dzq",
+    "prompt": "Implement a Lean proof that the paired coordinate ratio follows from two exact common-strict hypotheses.",
+    "target_skill": "write-lean-proofs",
+    "should_activate": true,
+    "reason": "Construct an exact Lean theorem under given hypotheses"
+  },
+  {
+    "id": "lean-proof-control",
+    "prompt": "Audit whether this already compiled Lean theorem proves the paper's stated mathematics.",
+    "target_skill": "write-lean-proofs",
+    "should_activate": false,
+    "reason": "Independent correspondence review is a separate skill"
+  },
+  {
+    "id": "kernel-profiler-hotspot",
+    "prompt": "Isolate a single Lean checker declaration causing 50 GiB replay memory and compare wrapper-level rewrites.",
+    "target_skill": "profile-lean-kernel",
+    "should_activate": true,
+    "reason": "Actual kernel-checking bottleneck and proof-form ablation"
+  },
+  {
+    "id": "kernel-profiler-export",
+    "prompt": "Profile a proof that builds with module opacity but stalls on private flat-export checking.",
+    "target_skill": "profile-lean-kernel",
+    "should_activate": true,
+    "reason": "Diagnose a version-pinned checker/transparency boundary"
+  },
+  {
+    "id": "kernel-profiler-control",
+    "prompt": "We have a missing theorem premise about the arithmetic trace. Can you construct the missing mathematical lemma?",
+    "target_skill": "profile-lean-kernel",
+    "should_activate": false,
+    "reason": "A missing mathematical premise is not a performance incident"
+  }
+]

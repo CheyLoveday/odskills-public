@@ -1,0 +1,13 @@
+status: experimental
+tags:
+  - architecture
+  - python
+  - functional-programming
+  - scientific-computing
+  - testing
+examples:
+  - Refactor this Python source intake so selection is pure and file reads stay at the boundary.
+  - This function mixes pandas transformations and database writes; separate the decisions from effects.
+  - How should I structure a reusable analysis pipeline without hidden state?
+related: []
+requirements: []

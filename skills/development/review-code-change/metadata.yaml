@@ -1,0 +1,14 @@
+status: experimental
+tags:
+  - code-review
+  - compatibility
+  - failure-paths
+examples:
+  - Review this diff for regressions and verify that the tests could catch the important failures.
+  - Check this local change against the public CLI contract; give findings without editing it.
+  - Take a separate review pass over the cache repair and its error paths.
+related:
+  - select-code-tests
+  - debug-code-systematically
+  - plan-development-work
+  - prepare-development-handover
