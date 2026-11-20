@@ -1,33 +1,28 @@
 # odskills
 
-Reusable agent workflows for software development, mathematics and Lean.
-Skills use portable `SKILL.md` packages.
+odskills is a private library of reusable agent workflows for software
+development, mathematics and Lean. Use a portable `SKILL.md` package from an
+authorised source. This repository hosts the public documentation.
 
-**Public availability.** This repository is a documentation landing page.
-There is no public skill archive or installable plugin here yet. When a
-package is published, its version, checksums and usage guide will be listed
-under [Releases](https://github.com/CheyLoveday/odskills-public/releases).
+[Releases](https://github.com/CheyLoveday/odskills-public/releases) is the place
+for public downloads. Skill packages and the plugin are currently private.
 
 ## Use one pinned skill
 
-Start with a published release or a package provided to you with permission.
+1. **Pin the source.** Select one skill from an authorised checkout at a
+   specific commit or a supplied package at a specific version. For an archive,
+   verify the publisher's checksum before extracting. Keep the skill folder
+   together with its references and helpers.
+2. **Make it available.** In a handoff such as Open Math OS, give the agent the
+   source pin and readable `SKILL.md` path. For native discovery, follow the
+   host's installation instructions and verify the skill in its inventory,
+   such as `/skills` in the Codex CLI.
+3. **Check actual use.** Give the agent a small task with a known result.
+   Check which instructions it read and whether the output meets the expected
+   result. Record verification, discovery or loading, and application separately.
 
-1. **Verify the package.** Record its source and version. Compare the archive
-   checksum with the publisher's checksum before extracting. Select one
-   skill in its catalogue and keep the whole directory together.
-2. **Make it available.** For a host with native skill discovery, follow the
-   package's instructions in a disposable project or profile first. In
-   the Codex CLI, use `/skills` to check the intended skill. For a handoff,
-   such as Open Math OS, name the pinned `SKILL.md` and make its required
-   files readable in the task workspace.
-3. **Check actual use.** Give the agent one small task with a known expected
-   result. Check which instructions it read and whether the output meets
-   that expectation. Record byte verification, discovery or explicit
-   loading, and application separately.
-
-For an upgrade, keep the verified previous package outside active discovery
-paths. Follow the release's rollback instructions and verify the restored
-version before using it again.
+Keep the previous verified package outside active discovery paths if you
+upgrade. To roll back, restore its pin and check what the host loads.
 
 [Agent instructions](AGENTS.md) · [Support](SUPPORT.md) ·
 [Privacy](PRIVACY.md) · [Terms](TERMS.md) · [MIT licence](LICENSE)
@@ -36,4 +31,4 @@ version before using it again.
 
 Generated, non-authoritative copy from `release/landing/README.md`.
 Regenerate in the maintainer repository with `python tools/build_landing_docs.py --output NEW_DIRECTORY`.
-Source SHA-256: `b9f23b0432b02610b68d0e48294ae36ec7390378d0a403304c0236d6a15fe72c`.
+Source SHA-256: `be630e184f52f23781d6d2bb3e384d84f4f921e5d19c63d9ce2968d930ea8160`.
