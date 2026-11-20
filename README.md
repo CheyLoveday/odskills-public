@@ -1,19 +1,39 @@
 # odskills
 
-Reusable workflows for development, mathematical audits and skill engineering.
-All 15 packages in the first candidate are experimental. This generated public
-distribution has one editable authority, maintained privately by Chey Loveday.
-Public issues and contributions are reviewed and incorporated there before a
-new distribution is generated. Do not independently maintain generated copies.
+Reusable agent workflows for software development, mathematics and Lean.
+Skills use portable `SKILL.md` packages.
 
-**Release status: prelaunch.** Skills and downloads will be published only after
-qualification and plugin-directory approval. The current pages describe the
-planned distribution; they are not an available or approved plugin listing.
+**Public availability.** This repository is a documentation landing page.
+There is no public skill archive or installable plugin here yet. When a
+package is published, its version, checksums and usage guide will be listed
+under [Releases](https://github.com/CheyLoveday/odskills-public/releases).
 
-[Privacy](PRIVACY.md) · [Support](SUPPORT.md) · [Terms](TERMS.md) · [MIT licence](LICENSE)
+## Use one pinned skill
+
+Start with a published release or a package provided to you with permission.
+
+1. **Verify the package.** Record its source and version. Compare the archive
+   checksum with the publisher's checksum before extracting. Select one
+   skill in its catalogue and keep the whole directory together.
+2. **Make it available.** For a host with native skill discovery, follow the
+   package's instructions in a disposable project or profile first. In
+   the Codex CLI, use `/skills` to check the intended skill. For a handoff,
+   such as Open Math OS, name the pinned `SKILL.md` and make its required
+   files readable in the task workspace.
+3. **Check actual use.** Give the agent one small task with a known expected
+   result. Check which instructions it read and whether the output meets
+   that expectation. Record byte verification, discovery or explicit
+   loading, and application separately.
+
+For an upgrade, keep the verified previous package outside active discovery
+paths. Follow the release's rollback instructions and verify the restored
+version before using it again.
+
+[Agent instructions](AGENTS.md) · [Support](SUPPORT.md) ·
+[Privacy](PRIVACY.md) · [Terms](TERMS.md) · [MIT licence](LICENSE)
 
 ---
 
-Generated, non-authoritative copy. Source: `release/README.md`.
-Generate with `python tools/build_release.py --version 0.1.0-alpha.1 --output NEW_DIRECTORY`
-(add `--landing-only` for prelaunch pages). Source SHA-256: `a13e9ecfa6c58ca71171cfb66f9c57d71c89d69755501156a8883a492e3b270d`.
+Generated, non-authoritative copy from `release/landing/README.md`.
+Regenerate in the maintainer repository with `python tools/build_landing_docs.py --output NEW_DIRECTORY`.
+Source SHA-256: `b9f23b0432b02610b68d0e48294ae36ec7390378d0a403304c0236d6a15fe72c`.
