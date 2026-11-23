@@ -17,6 +17,7 @@ Pin the source population, hypotheses, observables, exact target, proved depende
 
 1. Start from the target's source objects. When several observations must come from **one common witness**, write their joint image explicitly. For `a : S → A` and `b : S → B`, the joint image of `s ↦ (a s, b s)` is contained in the Cartesian product of marginal images. Prove the reverse inclusion separately if the target needs it.
 2. Search exact invariants: shared factors and kernels, valuations, congruences, symmetries, induced actions, recurrences, conserved forms and canonical decompositions. Eliminate variables only after retaining constraints that link observations.
+   For a remaining periodic population, use [modular probe selection](references/modular-probes.md) to compare tests on reachable phases.
 3. For compression `q : X → Y` and dynamics `F`, state the exact soundness law `q (F x) = G (q x)`, its invariant/reachable source domain and any required reverse lifting. Forward soundness does not imply recoverability.
 4. Write a small mathematical ladder: source characterization → representation → invariant transport → joint compatibility → consumer theorem. Prove each direction and inspect edge cases. Locate a countermodel to the tempting stronger claim.
 5. Keep proved algebra, exact finite controls, conditional arithmetic adapters and conjecture closure distinct. Check that local-to-global applications use the **same original witness** at every stage.

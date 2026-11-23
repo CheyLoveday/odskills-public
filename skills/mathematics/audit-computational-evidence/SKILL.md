@@ -28,7 +28,8 @@ project's directories, lifecycle gates or acceptance authority.
 2. Map the claimed domain to actual coverage: endpoints, signs, exceptional
    cases, input classes, partitions, stopping rules and skipped/failed work.
    A larger bound or general theorem needs its own reduction, not extrapolation
-   from an observed count. For symmetry reductions, delicate filters or numeric contracts read
+   from an observed count. For periodic exclusions, symmetry reductions,
+   delicate filters or numeric contracts read
    [predicate and coverage checks](references/predicate-and-coverage.md).
 3. Inspect provenance and actual completion separately from mathematical scope.
    Match source/input/checker identities, versions, commands, outputs, return
