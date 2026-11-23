@@ -56,6 +56,14 @@ codex plugin add odskills@odskills-public --json
 codex plugin list --marketplace odskills-public --json
 ```
 
+To register directly from GitHub, use the reviewed commit below in place of
+the local marketplace registration. Then run the same `add` and `list`
+commands above.
+
+```sh
+codex plugin marketplace add CheyLoveday/odskills-public --ref 6fd47e703453ac1b3f2c1a56ae767cc6f188f292
+```
+
 Compare the returned version with `plugins/odskills/SOURCE.json` and
 confirm the installed entry is enabled. In a source checkout with the
 [development requirements](../CONTRIBUTING.md#local-checks), use
@@ -114,10 +122,11 @@ The local checks on 23 November 2026 used Codex CLI 0.169.1 and Python
 - Project-local copies and GitHub downloads matched and exposed all 18
   packages. The Git installer also matched and exposed a user-scoped
   package in a disposable profile, and refused a duplicate destination.
-- The plugin installed from an exported directory containing only the
-  marketplace and plugin bundle. All 85 installed files matched and the
-  native scanner returned all 18 namespaced skills. Removal, rollback to
-  the reviewed older payload and reinstallation passed with fresh byte checks.
+- The plugin installed from a local bundle, a downloaded GitHub source
+  archive with no checkout, and a Git-backed marketplace pinned at
+  `6fd47e7`. Each install matched all 85 files
+  and exposed all 18 namespaced skills. Removal, rollback to the reviewed
+  older payload and reinstallation passed with fresh byte checks.
 - Fresh read-only Codex sessions read and applied the project-local,
   explicitly referenced plugin-cache, and portable handoff packages.
   The installed link checker passed the valid-anchor case and rejected a
