@@ -1,0 +1,20 @@
+{
+  "name": "odskills-public",
+  "interface": {
+    "displayName": "odskills public skills"
+  },
+  "plugins": [
+    {
+      "name": "odskills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/odskills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
