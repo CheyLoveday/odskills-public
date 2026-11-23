@@ -58,7 +58,11 @@ the earlier eligible domain was actually covered.
 Reject both invalid purported witnesses and unsupported universal success from
 finite tests. An integer being neither a square nor a cube does not by itself
 say whether all its prime exponents are at least two; evaluate the stated
-predicate. Keep the same witness through all joined properties. A failed search
+predicate. Keep the same witness through all joined properties. To challenge a
+periodic exclusion extended beyond its original scope, try a later lift of a
+rejected representative or an index allowed by a withdrawn guard. A surviving
+residue refutes the claimed finite exclusion on that domain. An actual source
+counterexample still needs every source hypothesis. A failed search
 program or timeout supplies no mathematical counterexample or negative result.
 
 ## Stop

@@ -5,7 +5,7 @@
       "source": "skills/mathematics/attack-mathematical-claim/LICENSE"
     },
     "skills/attack-mathematical-claim/SKILL.md": {
-      "sha256": "061933cdd675d77240212d390b60806f57ec4b15c06e75432843fc66d17525a7",
+      "sha256": "2da32f5570234371e6284593265102ffd2f8d3aa2180a37fef03aeaeca61a05d",
       "source": "skills/mathematics/attack-mathematical-claim/SKILL.md"
     },
     "skills/attack-mathematical-claim/metadata.yaml": {
@@ -17,7 +17,7 @@
       "source": "skills/mathematics/audit-computational-evidence/LICENSE"
     },
     "skills/audit-computational-evidence/SKILL.md": {
-      "sha256": "a0b25f52147ebaff641c563dbcf88505bae7336bf70a8dee6cf25da8ccdb3f38",
+      "sha256": "4591263896b12aeb4a97a02b63189099c7514bd8353d2cac505a0f309b02512b",
       "source": "skills/mathematics/audit-computational-evidence/SKILL.md"
     },
     "skills/audit-computational-evidence/metadata.yaml": {
@@ -25,7 +25,7 @@
       "source": "skills/mathematics/audit-computational-evidence/metadata.yaml"
     },
     "skills/audit-computational-evidence/references/predicate-and-coverage.md": {
-      "sha256": "3b7892d3e524d4407076e87c3a66cb7c1f2dda7e6a43d91e42d214f6d0e62f65",
+      "sha256": "b57d9e6a9aaa35042b9006568de2b1cfd9d78a81816dd76eba4466e5b7bf4f35",
       "source": "skills/mathematics/audit-computational-evidence/references/predicate-and-coverage.md"
     },
     "skills/audit-lean-correspondence/LICENSE": {
@@ -93,15 +93,19 @@
       "source": "skills/mathematics/derive-structural-invariants/LICENSE"
     },
     "skills/derive-structural-invariants/SKILL.md": {
-      "sha256": "6b99410ebf771e2122a2ec9569c16a9013d535477ebf9aefcbc8524a41fd0092",
+      "sha256": "0518c0a17f2bca985491fb4c5e2f519c5f6b4b16793cfb950a88c83745addded",
       "source": "skills/mathematics/derive-structural-invariants/SKILL.md"
     },
     "skills/derive-structural-invariants/metadata.yaml": {
       "sha256": "61f19d6a8137c2b5586d312b458387abc9ab22e02bd1deb1917b22f43a90d5bd",
       "source": "skills/mathematics/derive-structural-invariants/metadata.yaml"
     },
+    "skills/derive-structural-invariants/references/modular-probes.md": {
+      "sha256": "2cc689e712980f79588771747af854d741d79800fe6ed61b150191a4d384f869",
+      "source": "skills/mathematics/derive-structural-invariants/references/modular-probes.md"
+    },
     "skills/derive-structural-invariants/references/source-quotient-contracts.md": {
-      "sha256": "60106ee415b293421f17bce34c876d72f0ee2291e3e2ee70a1b589ec756febf7",
+      "sha256": "3abc9647d61555ee095fb8236dd409c2b807819b66e7bf2e03ce548fcf81db78",
       "source": "skills/mathematics/derive-structural-invariants/references/source-quotient-contracts.md"
     },
     "skills/design-computational-strategy/LICENSE": {
@@ -328,7 +332,7 @@
   "canonical_package_count": 18,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "d8960ae817104087e710680c8482688fda0314c45be9d585e793032f6a8866ee",
+  "input_sha256": "352ddd730dcd523eeb6c31f37bc5814ff9f2140299c018333c5f5fc246577bc9",
   "schema_version": 1,
-  "version": "0.1.0-experimental.hd8960ae81710"
+  "version": "0.1.0-experimental.h352ddd730dcd"
 }

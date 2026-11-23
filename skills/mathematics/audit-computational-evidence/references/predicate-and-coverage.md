@@ -36,6 +36,43 @@ bounded-to-general bridge.
   completion. Preserve old outputs; use a new destination for a new run.
   A filename or label does not bind a source version.
 
+## Periodic exclusions
+
+For a claim about every index `n = r + L t` with positive step `L`, retain
+a proved positive period `h` of the tested predicate, including any parity
+or sign guard. The reachable residues are `r + L t mod h` for
+`0 ≤ t < h / gcd(h,L)`. A rejected
+representative excludes its whole progression only if every reachable
+residue fails. A verified return of the full recurrence state supplies a
+period. A shorter period for a projected predicate needs its own argument.
+Test a mixed progression where the representative fails and another lift
+passes.
+
+If a witness also appears to eliminate a larger population, keep the
+original target and check that consequence separately. Read the actual
+prior survivor set with its reporting period. Prove every lift projects
+into the tested residues, keeping the same source index across filters.
+For example, projection by reducing only the stored representatives modulo
+a new period is justified when that period divides the old one. Otherwise
+cover the lifts on a common period. Count the union once. Drop a guard or
+filter and record which residues return, and distinguish locally admitted
+residues from actual integer solutions.
+
+Before accepting an empty survivor set, check the period and complete input
+roster against the declared population. A zero period or an empty roster for
+a nonempty population leaves coverage unproved. An empty eligible population
+requires its own proof. Exercise all three verifier controls:
+
+| Submitted certificate | Required verdict |
+| --- | --- |
+| Zero reporting period with an empty final mask | Reject invalid period |
+| Positive period with an empty input roster for a nonempty population | Reject incomplete coverage |
+| Positive period with every eligible phase checked and zero survivors | Accept the scoped exclusion when the arithmetic also checks |
+
+Give the proof from the finite result to the uniform statement, then give
+the implication from each original source witness into that statement.
+Record evidence for each step at its own scope.
+
 ## Enclosures and unresolved cases
 
 For interval or validated-numeric evidence, first establish what is enclosed
