@@ -30,6 +30,22 @@ def fixture(root):
 
 
 class PluginTests(unittest.TestCase):
+    def test_public_marketplace_points_to_the_generated_bundle(self):
+        marketplace = json.loads(
+            (ROOT / ".agents/plugins/marketplace.json").read_text()
+        )
+        manifest = json.loads((ROOT / "plugins/odskills/plugin.json").read_text())
+        self.assertEqual(marketplace["name"], "odskills-public")
+        (entry,) = marketplace["plugins"]
+        self.assertEqual(entry["name"], manifest["name"])
+        self.assertEqual(
+            entry["source"], {"source": "local", "path": "./plugins/odskills"}
+        )
+        self.assertEqual(
+            entry["policy"],
+            {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+        )
+
     def test_generated_plugin_matches_every_canonical_file_and_native_id(self):
         expected = PLUGIN.render(ROOT)
         PLUGIN.check(ROOT / "plugins/odskills", expected)

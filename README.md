@@ -21,6 +21,9 @@ flowchart LR
 ## Use one pinned skill
 
 Check out a reviewed commit or [release tag](https://github.com/CheyLoveday/odskills-public/releases).
+For the full bundle, use the [plugin marketplace](docs/install.md#install-the-codex-plugin).
+The [installation guide](docs/install.md) also covers the GitHub installer,
+verification and rollback.
 For an explicit handoff, including Open Math OS, give the agent that pin and the
 path to the chosen `SKILL.md`. Make the entire skill folder readable in the task
 workspace.
