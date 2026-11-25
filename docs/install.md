@@ -56,9 +56,11 @@ codex plugin add odskills@odskills-public --json
 codex plugin list --marketplace odskills-public --json
 ```
 
-To register directly from GitHub, use the reviewed commit below in place of
-the local marketplace registration. Then run the same `add` and `list`
-commands above.
+To register directly from GitHub, use the reviewed pin for the package
+you want in place of the local marketplace registration. The example
+below is a previously tested baseline. To install Lamport-Plus, use the
+[Lamport-Plus pin instructions](#lamport-plus). Then run the same `add`
+and `list` commands above.
 
 ```sh
 codex plugin marketplace add CheyLoveday/odskills-public --ref 6fd47e703453ac1b3f2c1a56ae767cc6f188f292
@@ -107,9 +109,17 @@ commit containing that package. Use the project destination
 `.agents/skills/lamport-plus/` and compare it with the pinned source using
 `tools/verify_install.py`. In a fresh Codex session invoke `$lamport-plus`.
 
-For the plugin, install [the marketplace bundle](#install-the-codex-plugin)
-at a reviewed commit whose `SOURCE.json` includes Lamport-Plus, and invoke
-`$odskills:lamport-plus` in a fresh session. In ChatGPT desktop, select
+For the Git-backed plugin, replace `REVIEWED_LAMPORT_PLUS_COMMIT` with the
+full reviewed commit whose `plugins/odskills/SOURCE.json` includes
+Lamport-Plus. See [plugin verification](#install-the-codex-plugin).
+
+```sh
+codex plugin marketplace add CheyLoveday/odskills-public --ref REVIEWED_LAMPORT_PLUS_COMMIT
+codex plugin add odskills@odskills-public --json
+codex plugin list --marketplace odskills-public --json
+```
+
+In a fresh Codex session invoke `$odskills:lamport-plus`. In ChatGPT desktop, select
 **odskills public skills** in Plugins Directory after registering the reviewed
 marketplace and restarting. Install **odskills** from that source. The
 desktop route requires its own discovery and application check.
