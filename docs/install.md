@@ -132,6 +132,16 @@ reviewed package outside discovery paths, then follow the
 [standalone replacement](#install-one-skill) or [plugin rollback](#replace-or-roll-back-the-plugin)
 procedure for the relevant route.
 
+## Mathematical reframing
+
+The standalone `reframe-mathematical-bottleneck` skill is available in
+[v0.1.0-alpha.4](https://github.com/CheyLoveday/odskills-public/releases/tag/v0.1.0-alpha.4).
+For a [standalone installation](#install-one-skill) use
+`skills/mathematics/reframe-mathematical-bottleneck` at the reviewed pin.
+Invoke `$reframe-mathematical-bottleneck` for the standalone skill or
+`$odskills:reframe-mathematical-bottleneck` for the plugin. The complete
+package includes the seven method cards and three runbooks.
+
 ## First application
 
 Ask `audit-computational-evidence` to check a claimed exclusion for all
