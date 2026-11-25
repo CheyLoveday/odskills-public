@@ -99,6 +99,29 @@ provide standalone packages. Their plugin payload can be exposed through
 its own [local marketplace
 entry](https://developers.openai.com/plugins/build/plugins#install-a-local-plugin-manually).
 
+## Lamport-Plus
+
+For the standalone skill, follow [Install one skill](#install-one-skill)
+with the complete `skills/mathematics/lamport-plus` folder at a reviewed
+commit containing that package. Use the project destination
+`.agents/skills/lamport-plus/` and compare it with the pinned source using
+`tools/verify_install.py`. In a fresh Codex session invoke `$lamport-plus`.
+
+For the plugin, install [the marketplace bundle](#install-the-codex-plugin)
+at a reviewed commit whose `SOURCE.json` includes Lamport-Plus, and invoke
+`$odskills:lamport-plus` in a fresh session. In ChatGPT desktop, select
+**odskills public skills** in Plugins Directory after registering the reviewed
+marketplace and restarting. Install **odskills** from that source. The
+desktop route requires its own discovery and application check.
+
+For a first task, ask for the exact integer parity proof in learning mode.
+Check that the proof constructs the odd-square witness, preserves the
+integer domain and offers a transfer question. The [worked example](../skills/mathematics/lamport-plus/examples/elementary-proof.md)
+shows the intended mathematical scope. For rollback, keep the previous
+reviewed package outside discovery paths, then follow the
+[standalone replacement](#install-one-skill) or [plugin rollback](#replace-or-roll-back-the-plugin)
+procedure for the relevant route.
+
 ## First application
 
 Ask `audit-computational-evidence` to check a claimed exclusion for all

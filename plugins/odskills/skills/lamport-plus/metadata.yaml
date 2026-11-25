@@ -1,0 +1,17 @@
+status: experimental
+tags:
+  - mathematics
+  - proof-writing
+  - mathematical-discovery
+  - learning
+examples:
+  - Develop a reusable proof with a research record and exact evidence for its decisive lemma.
+  - Show me how to reconstruct the quotient proof and apply its method to a new example.
+related:
+  - attack-mathematical-claim
+  - audit-mathematical-claim
+  - derive-structural-invariants
+  - audit-computational-evidence
+  - write-lean-proofs
+  - audit-lean-correspondence
+requirements: []
