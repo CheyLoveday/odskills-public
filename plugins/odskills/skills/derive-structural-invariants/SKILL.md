@@ -8,6 +8,9 @@ description: Discover source-coupled invariants, exact representations and reusa
 ## When to use
 
 Use when a proof needs a better mathematical representation or a theorem family, including transfers between dynamical systems, Diophantine problems and formal methods. A finite experiment is not a universal theorem.
+When the main decision is whether a representation improves a downstream
+quantitative bound after transfer costs, use `reframe-mathematical-bottleneck`
+if it is available.
 
 ## Inputs
 

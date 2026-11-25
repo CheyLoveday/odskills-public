@@ -8,6 +8,7 @@ examples:
   - Find the source-coupled invariants linking two Pell traces of a powerful triple.
   - Transfer a Rule 110 predictive quotient to a precise arithmetic projection.
 related:
+  - reframe-mathematical-bottleneck
   - write-lean-proofs
   - audit-mathematical-claim
   - attack-mathematical-claim

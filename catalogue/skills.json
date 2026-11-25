@@ -133,6 +133,7 @@
       "name": "derive-structural-invariants",
       "path": "skills/mathematics/derive-structural-invariants/SKILL.md",
       "related": [
+        "reframe-mathematical-bottleneck",
         "write-lean-proofs",
         "audit-mathematical-claim",
         "attack-mathematical-claim"
@@ -307,6 +308,30 @@
         "kernel",
         "profiling",
         "proof-engineering"
+      ]
+    },
+    {
+      "description": "Compare mathematical representations when a proof stalls on a weak quantitative bound, a singular chart, or an overstrong regularity requirement. Return a source-preserving choice with the net downstream bound and first remaining obligation. Use for a concrete proof bottleneck. Routine algebra, independent proof audit, and invariant discovery without a bound comparison have their own workflows.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Compare a singular chart with a finite cover and check which route preserves the count and improves the determinant bound.",
+        "Work backward from the required exponent and decide whether a smaller coordinate survives denominator and fibre losses."
+      ],
+      "name": "reframe-mathematical-bottleneck",
+      "path": "skills/mathematics/reframe-mathematical-bottleneck/SKILL.md",
+      "related": [
+        "derive-structural-invariants",
+        "audit-mathematical-claim",
+        "audit-computational-evidence",
+        "attack-mathematical-claim"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematics",
+        "proof-strategy",
+        "quantitative-bounds",
+        "representation"
       ]
     },
     {

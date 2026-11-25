@@ -93,11 +93,11 @@
       "source": "skills/mathematics/derive-structural-invariants/LICENSE"
     },
     "skills/derive-structural-invariants/SKILL.md": {
-      "sha256": "0518c0a17f2bca985491fb4c5e2f519c5f6b4b16793cfb950a88c83745addded",
+      "sha256": "810df1d5ca7a8f73f032a5464e2fecd7ebb9df3733cd8e62b812b2a23ba73ad3",
       "source": "skills/mathematics/derive-structural-invariants/SKILL.md"
     },
     "skills/derive-structural-invariants/metadata.yaml": {
-      "sha256": "61f19d6a8137c2b5586d312b458387abc9ab22e02bd1deb1917b22f43a90d5bd",
+      "sha256": "e04af6201c03034efb8b26ffe65342bf839cf64082290e5df5dde7bd9dfd6bb3",
       "source": "skills/mathematics/derive-structural-invariants/metadata.yaml"
     },
     "skills/derive-structural-invariants/references/modular-probes.md": {
@@ -252,6 +252,58 @@
       "sha256": "8b9219b569602e5826c881a09fe67e926d8fa75536f0829d8b286ced180b7c24",
       "source": "skills/development/profile-lean-kernel/references/checker-boundaries.md"
     },
+    "skills/reframe-mathematical-bottleneck/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/LICENSE"
+    },
+    "skills/reframe-mathematical-bottleneck/SKILL.md": {
+      "sha256": "0554516c19060535463cc6da6f60f1f71b1c88aeb510c115c9c1e9e89ef1f086",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/SKILL.md"
+    },
+    "skills/reframe-mathematical-bottleneck/metadata.yaml": {
+      "sha256": "b9220e2dc7fd934af8b2987573392f323b6bc0c31333cfbec7b344855e48b64a",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/metadata.yaml"
+    },
+    "skills/reframe-mathematical-bottleneck/references/amplify-invariants-through-lifts.md": {
+      "sha256": "fdd26eada8b56267024386b14d20284dc3959a7931e008ec690d8fc0ba540e79",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/amplify-invariants-through-lifts.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/compress-counting-through-shared-generators.md": {
+      "sha256": "5f2900de85a92a6f978a24be1be6adcc6357d39adde1257deeb93f3aa82d8273",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/compress-counting-through-shared-generators.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/extract-constraints-from-proof-failure.md": {
+      "sha256": "bb5b10957bdf1174640e7f7f0d4ad216fac9080fbd9df59527b68b8cf52edc88",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/extract-constraints-from-proof-failure.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/invert-mathematical-parametrization.md": {
+      "sha256": "630cd4e4f02136fb531984f0c81a86a303e301caf43be3b1d4b2cb1572219e12",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/invert-mathematical-parametrization.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/replace-regularity-with-structural-complexity.md": {
+      "sha256": "2a8709fc834d68a41582b1f2d6c3279c6f6bcb24cbc490673b19f555be3ec492",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/replace-regularity-with-structural-complexity.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/reverse-engineer-theorem-budgets.md": {
+      "sha256": "bd081a81b0c1e5b0db7e6da4910579ac5703caf6cd3d23eb1bb4d1b889f52d4a",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/reverse-engineer-theorem-budgets.md"
+    },
+    "skills/reframe-mathematical-bottleneck/references/test-relaxed-proof-system-completeness.md": {
+      "sha256": "66082ca628c5e57b6e19bb834336f82ce5f5d03cff4ca9c7d85f495138aa946a",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/references/test-relaxed-proof-system-completeness.md"
+    },
+    "skills/reframe-mathematical-bottleneck/runbooks/finite-cover-determinant-budget.md": {
+      "sha256": "c22318869a121d89f3bb267a0a64b2b14f83d6e822c03a005c95dd1ac8521165",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/runbooks/finite-cover-determinant-budget.md"
+    },
+    "skills/reframe-mathematical-bottleneck/runbooks/incidence-budget-and-adverse-controls.md": {
+      "sha256": "70c048f4f9173b76dbdce48aa8a2d79b10ff2a9e083df55799d3d15f53dc57a5",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/runbooks/incidence-budget-and-adverse-controls.md"
+    },
+    "skills/reframe-mathematical-bottleneck/runbooks/representation-bottleneck-triage.md": {
+      "sha256": "68a03f468a403a6776fa095935305c07cec796993c61b7536982befc77a9deaa",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/runbooks/representation-bottleneck-triage.md"
+    },
     "skills/review-code-change/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
       "source": "skills/development/review-code-change/LICENSE"
@@ -329,10 +381,10 @@
       "source": "skills/mathematics/write-lean-proofs/references/proof-form-choices.md"
     }
   },
-  "canonical_package_count": 18,
+  "canonical_package_count": 19,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "352ddd730dcd523eeb6c31f37bc5814ff9f2140299c018333c5f5fc246577bc9",
+  "input_sha256": "f25df33fbc8602f989906fd6e282b0c775a8560a390f879079937e3c1ad36c5e",
   "schema_version": 1,
-  "version": "0.1.0-experimental.h352ddd730dcd"
+  "version": "0.1.0-experimental.hf25df33fbc86"
 }
