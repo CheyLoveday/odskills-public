@@ -19,6 +19,9 @@ Read the literal target, mathematical source, selected modules and imports, pinn
 2. Decompose into small reusable lemmas: exact representation, arithmetic or cochain identity, source-witness compatibility, induction/recursive transport and final consumer bridge. Keep statement strengths explicit and do not silently replace a real arithmetic object with an abstract placeholder.
    When translating a Lamport blueprint or restructuring a nontrivial proof
    for human review, read the [Lamport proof style guide](references/lamport-proof-style.md).
+   For a Lamport-Plus blueprint, keep its claim IDs, exact statements, proof
+   paths and substantive steps in the implementation handoff. Record any
+   missing source bridge and its blocked dependents as open.
 3. For a dynamical system, prove the step and transport it over arbitrary iterations, for example by induction or a library iteration lemma. Inspect the elaborated goal of any `decide` or `rfl` proof. A check at selected inputs leaves the general statement open, while definitional equality can establish a claim with arbitrary parameters.
 4. Rewrite through **proved enclosing map/structure equalities** before projecting deeply nested function values. Avoid unnecessary unfolding of large definitions under casts, `DFunLike.coe`, quotient representatives and recursors. Read [proof-form choices](references/proof-form-choices.md) when choosing a costly equivalence representation.
 5. No `sorry`, `admit`, new axioms, unsafe shortcuts, input-keyed answers or silent target edits. Separate a pure algebraic criterion from its application to actual source-derived classes, local traces or determinant bases.

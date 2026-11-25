@@ -33,6 +33,13 @@ map from step to block or declaration can make the correspondence clear.
 Use explicit arguments or a small lemma when a reader needs to see the
 inputs. Verify declaration dependencies separately when assurance calls for it.
 
+For Lamport-Plus, retain the stable claim ID and statement revision in the
+crosswalk alongside the full path of each substantive proof step. Map grouped
+automation to the obligations it discharges. Keep planned Lean names distinct
+from inspected declarations. Record an open source bridge with its exact
+statement, active hypotheses and blocked steps. Separate evidence for target
+correspondence, compilation, axiom inspection and any independent replay.
+
 ## Review the result
 
 Skim the theorem and outer proof before reading the tactic blocks. Check

@@ -56,9 +56,11 @@ codex plugin add odskills@odskills-public --json
 codex plugin list --marketplace odskills-public --json
 ```
 
-To register directly from GitHub, use the reviewed commit below in place of
-the local marketplace registration. Then run the same `add` and `list`
-commands above.
+To register directly from GitHub, use the reviewed pin for the package
+you want in place of the local marketplace registration. The example
+below is a previously tested baseline. To install Lamport-Plus, use the
+[Lamport-Plus pin instructions](#lamport-plus). Then run the same `add`
+and `list` commands above.
 
 ```sh
 codex plugin marketplace add CheyLoveday/odskills-public --ref 6fd47e703453ac1b3f2c1a56ae767cc6f188f292
@@ -98,6 +100,47 @@ rollback. Earlier source releases with no repository marketplace can still
 provide standalone packages. Their plugin payload can be exposed through
 its own [local marketplace
 entry](https://developers.openai.com/plugins/build/plugins#install-a-local-plugin-manually).
+
+## Lamport-Plus
+
+For the standalone skill, follow [Install one skill](#install-one-skill)
+with the complete `skills/mathematics/lamport-plus` folder at a reviewed
+commit containing that package. Use the project destination
+`.agents/skills/lamport-plus/` and compare it with the pinned source using
+`tools/verify_install.py`. In a fresh Codex session invoke `$lamport-plus`.
+
+For the Git-backed plugin, replace `REVIEWED_LAMPORT_PLUS_COMMIT` with the
+full reviewed commit whose `plugins/odskills/SOURCE.json` includes
+Lamport-Plus. See [plugin verification](#install-the-codex-plugin).
+
+```sh
+codex plugin marketplace add CheyLoveday/odskills-public --ref REVIEWED_LAMPORT_PLUS_COMMIT
+codex plugin add odskills@odskills-public --json
+codex plugin list --marketplace odskills-public --json
+```
+
+In a fresh Codex session invoke `$odskills:lamport-plus`. In ChatGPT desktop, select
+**odskills public skills** in Plugins Directory after registering the reviewed
+marketplace and restarting. Install **odskills** from that source. The
+desktop route requires its own discovery and application check.
+
+For a first task, ask for the exact integer parity proof in learning mode.
+Check that the proof constructs the odd-square witness, preserves the
+integer domain and offers a transfer question. The [worked example](../skills/mathematics/lamport-plus/examples/elementary-proof.md)
+shows the intended mathematical scope. For rollback, keep the previous
+reviewed package outside discovery paths, then follow the
+[standalone replacement](#install-one-skill) or [plugin rollback](#replace-or-roll-back-the-plugin)
+procedure for the relevant route.
+
+## Mathematical reframing
+
+The standalone `reframe-mathematical-bottleneck` skill is available in
+[v0.1.0-alpha.4](https://github.com/CheyLoveday/odskills-public/releases/tag/v0.1.0-alpha.4).
+For a [standalone installation](#install-one-skill) use
+`skills/mathematics/reframe-mathematical-bottleneck` at the reviewed pin.
+Invoke `$reframe-mathematical-bottleneck` for the standalone skill or
+`$odskills:reframe-mathematical-bottleneck` for the plugin. The complete
+package includes the seven method cards and three runbooks.
 
 ## First application
 

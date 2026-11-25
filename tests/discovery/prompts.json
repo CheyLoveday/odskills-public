@@ -656,5 +656,40 @@
     "target_skill": "reframe-mathematical-bottleneck",
     "should_activate": false,
     "reason": "Independent proof audit alone"
+  },
+  {
+    "id": "lamport-plus-direct",
+    "prompt": "Use Lamport-Plus to develop a structured proof and research record for this conjecture.",
+    "target_skill": "lamport-plus",
+    "should_activate": true,
+    "reason": "Explicit proof discovery and research recording"
+  },
+  {
+    "id": "lamport-plus-reconstruction",
+    "prompt": "Show me how to reconstruct this quotient proof from the main idea, then give me a different problem to try.",
+    "target_skill": "lamport-plus",
+    "should_activate": true,
+    "reason": "Reader reconstruction and transfer"
+  },
+  {
+    "id": "lamport-plus-light",
+    "prompt": "Give a structured proof that an integer with even square is even, with the odd-square witness explicit.",
+    "target_skill": "lamport-plus",
+    "should_activate": true,
+    "reason": "Light mathematical proof with visible witness"
+  },
+  {
+    "id": "lamport-plus-lean-only",
+    "prompt": "Repair this Lean tactic block for the exact theorem already in the file. Keep the statement and proof outline.",
+    "target_skill": "lamport-plus",
+    "should_activate": false,
+    "reason": "Previously specified Lean-only proof repair"
+  },
+  {
+    "id": "lamport-plus-independent-audit",
+    "prompt": "Independently audit the validity of this proposed proof and flag unsupported inferences.",
+    "target_skill": "lamport-plus",
+    "should_activate": false,
+    "reason": "Independent proof audit alone"
   }
 ]

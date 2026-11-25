@@ -152,6 +152,50 @@
       "sha256": "62ca14d27adbde224d7dc915d0cd1ee78f2be73091bb9b7b6d6dd437a9d438a5",
       "source": "skills/development/functional-core-design/references/testing.md"
     },
+    "skills/lamport-plus/LICENSE": {
+      "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
+      "source": "skills/mathematics/lamport-plus/LICENSE"
+    },
+    "skills/lamport-plus/SKILL.md": {
+      "sha256": "9da9956f24b6cc780076be767ec4074f36b59f9be9a17b4531c9f70c8b24dffe",
+      "source": "skills/mathematics/lamport-plus/SKILL.md"
+    },
+    "skills/lamport-plus/assets/claim-ledger.csv": {
+      "sha256": "d0c8322255a5e64b78dd966f972f417576b1eaf5e14757d163c944fb647e16a4",
+      "source": "skills/mathematics/lamport-plus/assets/claim-ledger.csv"
+    },
+    "skills/lamport-plus/assets/lean-crosswalk.md": {
+      "sha256": "21adce8d30ab31651aea2b2d98c9922704f41e80eecd21bfc44811569f685621",
+      "source": "skills/mathematics/lamport-plus/assets/lean-crosswalk.md"
+    },
+    "skills/lamport-plus/assets/proof-template.md": {
+      "sha256": "525c3983915460a62fa4af7c68f07583dad744e2c9a290ec20dc8d09ba165bb5",
+      "source": "skills/mathematics/lamport-plus/assets/proof-template.md"
+    },
+    "skills/lamport-plus/assets/research-record.md": {
+      "sha256": "6cbb99bb122addf26ea9c3f0928ed7b3697bfe40107cc894f89fe79de044fb12",
+      "source": "skills/mathematics/lamport-plus/assets/research-record.md"
+    },
+    "skills/lamport-plus/examples/elementary-proof.md": {
+      "sha256": "518e03152112a361c3072dadb957b6647e0ffa7589c45bf90ec59eab3dd0a9bf",
+      "source": "skills/mathematics/lamport-plus/examples/elementary-proof.md"
+    },
+    "skills/lamport-plus/examples/residual-quotient.md": {
+      "sha256": "6a003718ca755e2f01be2cec628c190c0475871325266731c0d4694e47991750",
+      "source": "skills/mathematics/lamport-plus/examples/residual-quotient.md"
+    },
+    "skills/lamport-plus/metadata.yaml": {
+      "sha256": "962f67e878435b83c91200deca296ba1071c6902da5392c2c297971862280649",
+      "source": "skills/mathematics/lamport-plus/metadata.yaml"
+    },
+    "skills/lamport-plus/references/proof-and-learning.md": {
+      "sha256": "aa8e1ab51ac2c07debf5d8418919ecbdd38b94a9e1a2734ff646347b1f0d0aee",
+      "source": "skills/mathematics/lamport-plus/references/proof-and-learning.md"
+    },
+    "skills/lamport-plus/references/research-and-evidence.md": {
+      "sha256": "31b6e0fcd98e309b65158a8f26d0e3128d5a09eed82c92559a7af0add3ed4db0",
+      "source": "skills/mathematics/lamport-plus/references/research-and-evidence.md"
+    },
     "skills/link-management/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
       "source": "skills/development/link-management/LICENSE"
@@ -365,15 +409,15 @@
       "source": "skills/mathematics/write-lean-proofs/LICENSE"
     },
     "skills/write-lean-proofs/SKILL.md": {
-      "sha256": "4687f228a915e59a7a100da86d2f7995e9c14500ef813dd7352a1bfac549f9d9",
+      "sha256": "30feb14f65f2ef5bb29df75939e16699d6d1fe2d8748c5a17e721f843b4c6a85",
       "source": "skills/mathematics/write-lean-proofs/SKILL.md"
     },
     "skills/write-lean-proofs/metadata.yaml": {
-      "sha256": "796298d70989b34af0a1873888f74866083b40adf147e3010ce51491f329382b",
+      "sha256": "e156c8ef02ac06c8285216824ad5831018de4b07e9a98c993ef042dd1ee49980",
       "source": "skills/mathematics/write-lean-proofs/metadata.yaml"
     },
     "skills/write-lean-proofs/references/lamport-proof-style.md": {
-      "sha256": "7ddc242aab7b5208eaf7fe8c57da504dbdccaddc8812febf63862ed8ea7c2fbd",
+      "sha256": "08bcab1bf662cc4a87545947b054def2caa4c04c6aa6d8029c39cf0eef7d69a2",
       "source": "skills/mathematics/write-lean-proofs/references/lamport-proof-style.md"
     },
     "skills/write-lean-proofs/references/proof-form-choices.md": {
@@ -381,10 +425,10 @@
       "source": "skills/mathematics/write-lean-proofs/references/proof-form-choices.md"
     }
   },
-  "canonical_package_count": 19,
+  "canonical_package_count": 20,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "f25df33fbc8602f989906fd6e282b0c775a8560a390f879079937e3c1ad36c5e",
+  "input_sha256": "4c23d3d313b31726cf4f841dbd6050b90d7ba7be220b8b9d5c997651dd9d6d8f",
   "schema_version": 1,
-  "version": "0.1.0-experimental.hf25df33fbc86"
+  "version": "0.1.0-experimental.h4c23d3d313b3"
 }
