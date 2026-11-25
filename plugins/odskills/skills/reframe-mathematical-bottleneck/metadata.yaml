@@ -1,0 +1,15 @@
+status: experimental
+tags:
+  - mathematics
+  - proof-strategy
+  - quantitative-bounds
+  - representation
+examples:
+  - Compare a singular chart with a finite cover and check which route preserves the count and improves the determinant bound.
+  - Work backward from the required exponent and decide whether a smaller coordinate survives denominator and fibre losses.
+related:
+  - derive-structural-invariants
+  - audit-mathematical-claim
+  - audit-computational-evidence
+  - attack-mathematical-claim
+requirements: []

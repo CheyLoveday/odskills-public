@@ -621,5 +621,40 @@
     "target_skill": "profile-lean-kernel",
     "should_activate": false,
     "reason": "A missing mathematical premise is not a performance incident"
+  },
+  {
+    "id": "reframe-quantitative-chart",
+    "prompt": "My proof stalls on this derivative bound. Can a finite projection replace the current coordinate and still improve the final count once fibres and losses are included?",
+    "target_skill": "reframe-mathematical-bottleneck",
+    "should_activate": true,
+    "reason": "Compare exact alternative representations in the same quantitative target"
+  },
+  {
+    "id": "reframe-costed-bound",
+    "prompt": "The inverse parameter is much smaller but clearing denominators is more expensive. Which of these two charts actually closes the exponent budget?",
+    "target_skill": "reframe-mathematical-bottleneck",
+    "should_activate": true,
+    "reason": "A smaller raw scale needs a net downstream bound"
+  },
+  {
+    "id": "reframe-simple-inequality",
+    "prompt": "Given N≥8, show only that N−3≥N/2.",
+    "target_skill": "reframe-mathematical-bottleneck",
+    "should_activate": false,
+    "reason": "The current expression closes by a direct sufficient estimate"
+  },
+  {
+    "id": "reframe-invariant-only",
+    "prompt": "Find a common integer invariant for these two exact recurrences. I need a shared representation, with no inequality comparison.",
+    "target_skill": "reframe-mathematical-bottleneck",
+    "should_activate": false,
+    "reason": "Structural invariant discovery without a quantitative bottleneck decision"
+  },
+  {
+    "id": "reframe-proof-audit-only",
+    "prompt": "Audit this fixed determinant proof for statement and scope errors. Do not look for a replacement argument.",
+    "target_skill": "reframe-mathematical-bottleneck",
+    "should_activate": false,
+    "reason": "Independent proof audit alone"
   }
 ]
