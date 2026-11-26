@@ -2,7 +2,7 @@ status: experimental
 evaluation:
   status: tested
   note: Map-first closure passed a controlled Codex case with a same-source join, exact margin and conditional scope.
-  evidence: https://github.com/CheyLoveday/odskills-public/pull/6
+  evidence: TESTING.md
 tags:
   - mathematics
   - proof-strategy

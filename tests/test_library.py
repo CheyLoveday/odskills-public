@@ -153,6 +153,28 @@ class LibraryContractTests(unittest.TestCase):
                     with self.assertRaisesRegex(LibraryError, "evaluation"):
                         discover(root)
 
+    def test_package_testing_record_must_exist_and_links_from_catalogue(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            add_skill(root, "development", "local-skill")
+            package = root / "skills/development/local-skill"
+            (package / "metadata.yaml").write_text(
+                "evaluation:\n  status: tested\n"
+                "  note: A replay passed.\n  evidence: TESTING.md\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(LibraryError, "missing file.*TESTING.md"):
+                discover(root)
+
+            (package / "TESTING.md").write_text("# Testing\nA replay passed.\n", encoding="utf-8")
+            skills = discover(root)
+            record = json.loads(render_json(skills))["skills"][0]
+            self.assertEqual(record["evaluation"]["evidence"], "TESTING.md")
+            self.assertIn(
+                "[Tested](../skills/development/local-skill/TESTING.md)",
+                render_markdown(skills),
+            )
+
     def test_unknown_collection_member_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

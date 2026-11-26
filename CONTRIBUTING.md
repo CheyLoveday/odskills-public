@@ -44,8 +44,19 @@ experimental, and behavioral evidence are recorded separately.
 
 Record the label in the package's optional `metadata.yaml` under `evaluation`.
 Use `untested`, `more-tests-needed` or `tested` for its `status`.
-For the two evidence-bearing labels, add a one-line `note` and a public HTTPS
-`evidence` link to the result. Include the tested source revision or release
-in the linked result. Review the label when the tested behavior changes.
-Omit `evaluation` for an unrecorded entry. The Markdown catalogue displays
-the label and the JSON catalogue uses `null` for an unrecorded evaluation.
+For the two evidence-bearing labels, add a one-line `note` and set
+`evidence: TESTING.md` when recording tests for a package. Keep the record
+next to `SKILL.md` so it travels in standalone copies and plugin bundles.
+Existing entries can still use a public HTTPS evidence link.
+
+Record the tested revision or release, host and test scope in `TESTING.md`.
+Keep observed results, failures and open tests visible. Include a shareable
+replay when the inputs can travel with the package. Keep assessor expectations
+out of the replay prompt. For a new package awaiting behavioral tests, record
+`untested` and name the planned check. Review the entry when tested behavior
+changes and retain the earlier results with their pins.
+
+Omit `evaluation` where the evidence is unrecorded. The Markdown catalogue
+links the label to the evidence. In the JSON catalogue, `TESTING.md` resolves
+relative to the skill's `path` directory and an unrecorded evaluation is
+`null`.
