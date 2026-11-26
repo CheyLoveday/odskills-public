@@ -20,6 +20,7 @@ METADATA_FIELDS = frozenset(
     {"status", "evaluation", "tags", "examples", "related", "requirements"}
 )
 STATUSES = frozenset({"experimental", "stable", "deprecated"})
+TESTING_RECORD = "TESTING.md"
 EVALUATION_LABELS = {
     "untested": "Untested",
     "more-tests-needed": "More tests needed",
@@ -117,11 +118,15 @@ def _read_evaluation(value: Any, path: Path) -> Evaluation:
     ):
         raise LibraryError(f"{path}: expected a single-line evaluation note")
     evidence = data.get("evidence")
-    if "evidence" in data and (
+    if evidence == TESTING_RECORD:
+        _safe_file(path.parent / TESTING_RECORD, path.parent)
+    elif "evidence" in data and (
         type(evidence) is not str
         or not re.fullmatch(r"https://[^/\s<>()|]+(?:/[^\s<>()|]*)?", evidence)
     ):
-        raise LibraryError(f"{path}: expected an HTTPS evaluation evidence URL")
+        raise LibraryError(
+            f"{path}: expected {TESTING_RECORD} or an HTTPS evaluation evidence URL"
+        )
     if status != "untested" and (note is None or evidence is None):
         raise LibraryError(f"{path}: evaluation requires a scope note and evidence")
     return Evaluation(status, note, evidence)
@@ -341,12 +346,16 @@ def render_json(skills: tuple[Skill, ...]) -> str:
     )
 
 
-def _evaluation_cell(evaluation: Evaluation | None) -> str:
+def _evaluation_cell(skill: Skill) -> str:
+    evaluation = skill.evaluation
     if evaluation is None:
         return "Unrecorded"
     cell = EVALUATION_LABELS[evaluation.status]
-    if evaluation.evidence is not None:
-        cell = f"[{cell}]({evaluation.evidence})"
+    evidence = evaluation.evidence
+    if evidence == TESTING_RECORD:
+        evidence = "../" + Path(skill.path).with_name(TESTING_RECORD).as_posix()
+    if evidence is not None:
+        cell = f"[{cell}]({evidence})"
     if evaluation.note is not None:
         cell += ". " + escape(evaluation.note).replace("|", "\\|")
     return cell
@@ -369,7 +378,7 @@ def render_markdown(skills: tuple[Skill, ...]) -> str:
         label = f"[{skill.name}](../{skill.path})"
         desc = skill.description.replace("|", "\\|")
         keywords = ", ".join(skill.tags) or "—"
-        evidence = _evaluation_cell(skill.evaluation)
+        evidence = _evaluation_cell(skill)
         out.append(
             f"| {label} | {skill.domain} | {skill.status} | {evidence} | {keywords} | {desc} |"
         )

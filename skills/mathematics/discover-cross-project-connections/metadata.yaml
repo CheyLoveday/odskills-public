@@ -2,7 +2,7 @@ status: experimental
 evaluation:
   status: more-tests-needed
   note: Paired selection and application passed on one supplied portfolio. Test added value on independent portfolios that require source discovery.
-  evidence: https://github.com/CheyLoveday/odskills-public/pull/7
+  evidence: TESTING.md
 tags:
   - mathematical-research
   - cross-project

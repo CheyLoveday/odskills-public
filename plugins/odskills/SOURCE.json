@@ -132,6 +132,10 @@
       "sha256": "f98872e3f2fc72beb1499e549e28e0ac4a6a49f6ed7cc836f171d199bff43f38",
       "source": "skills/mathematics/discover-cross-project-connections/SKILL.md"
     },
+    "skills/discover-cross-project-connections/TESTING.md": {
+      "sha256": "59633f8f2b3d55813a3b29e672fb0c02548953bb5713325951596cdff6eb63be",
+      "source": "skills/mathematics/discover-cross-project-connections/TESTING.md"
+    },
     "skills/discover-cross-project-connections/agents/openai.yaml": {
       "sha256": "8453f83f2e85f6fa946e89ad13713909c46d517defe22cbb0f5a87a8ff1dc2a9",
       "source": "skills/mathematics/discover-cross-project-connections/agents/openai.yaml"
@@ -141,7 +145,7 @@
       "source": "skills/mathematics/discover-cross-project-connections/examples/partition-and-fibres.md"
     },
     "skills/discover-cross-project-connections/metadata.yaml": {
-      "sha256": "9bb6e4f8eae68fd7f503ee7c55e2a3b67988631c4194235a5049aac22697d1c2",
+      "sha256": "3f6976a026626b013ac5af8640960ab5d6cebbb32924c656ad9cbc17d7c48b90",
       "source": "skills/mathematics/discover-cross-project-connections/metadata.yaml"
     },
     "skills/discover-cross-project-connections/references/handoff-and-comparison.md": {
@@ -328,8 +332,12 @@
       "sha256": "8548f7b8e04e81bf6dc5f8a6420781822be4aa48f43f54e8ab3de0aa445e7e59",
       "source": "skills/mathematics/reframe-mathematical-bottleneck/SKILL.md"
     },
+    "skills/reframe-mathematical-bottleneck/TESTING.md": {
+      "sha256": "d409a7de42f08dc9976669deac672cd925da9b922ee299065bce79d3d8cf8969",
+      "source": "skills/mathematics/reframe-mathematical-bottleneck/TESTING.md"
+    },
     "skills/reframe-mathematical-bottleneck/metadata.yaml": {
-      "sha256": "f5c47bd7c4d7d6390cd96947d9f767081162902219668814a57af8ac66f6d009",
+      "sha256": "87788cdf2ac3e52446f01a2b9f090a4d2bed687a785afeae6a9f5d2142d14b5b",
       "source": "skills/mathematics/reframe-mathematical-bottleneck/metadata.yaml"
     },
     "skills/reframe-mathematical-bottleneck/references/amplify-invariants-through-lifts.md": {
@@ -456,7 +464,7 @@
   "canonical_package_count": 21,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "82cde32a6dd7292e761d7d2eed8d0c22cb8d2e01db53d34fe0262a189f89563d",
+  "input_sha256": "fb363b8110060743129d94cdc92dc9afddd4a44aa9e02ff634b28a5807ad6a7b",
   "schema_version": 1,
-  "version": "0.1.0-experimental.h82cde32a6dd7"
+  "version": "0.1.0-experimental.hfb363b811006"
 }

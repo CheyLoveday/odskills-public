@@ -5,6 +5,8 @@ skill engineering. Each skill is an experimental, portable `SKILL.md` package.
 Browse the [catalogue](catalogue/skills.md) and choose the skill that fits the
 outcome you want. The [evaluation labels](CONTRIBUTING.md#evaluation-labels)
 show which behavioral checks are recorded and where more testing is needed.
+When a skill has a `TESTING.md`, open it alongside `SKILL.md` for the tested
+revision, results and replay guidance.
 
 | Area | Examples |
 | --- | --- |
