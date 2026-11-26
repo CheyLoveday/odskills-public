@@ -29,3 +29,23 @@ before running the plugin check. Commit the source and generated files together.
 Use shareable inputs for tests and keep examples and dependency notices with
 the affected package. When reporting a behavioral test, distinguish discovery,
 instruction reads and the observed output.
+
+## Evaluation labels
+
+A skill can be available at any evaluation level. Lifecycle, such as
+experimental, and behavioral evidence are recorded separately.
+
+| Label | Meaning |
+| --- | --- |
+| Unrecorded | The catalogue has no evaluation entry for this skill. Check the package history for earlier tests. |
+| Untested | The maintainer has recorded that behavioral tests are pending. Static and packaging checks may already have run. |
+| More tests needed | Some behavioral evidence exists. The note names the observed scope and the main open test. |
+| Tested | Behavioral tests passed for the scope in the note. The evidence link identifies the checks and their limits. |
+
+Record the label in the package's optional `metadata.yaml` under `evaluation`.
+Use `untested`, `more-tests-needed` or `tested` for its `status`.
+For the two evidence-bearing labels, add a one-line `note` and a public HTTPS
+`evidence` link to the result. Include the tested source revision or release
+in the linked result. Review the label when the tested behavior changes.
+Omit `evaluation` for an unrecorded entry. The Markdown catalogue displays
+the label and the JSON catalogue uses `null` for an unrecorded evaluation.

@@ -110,6 +110,49 @@ class LibraryContractTests(unittest.TestCase):
             with self.assertRaisesRegex(LibraryError, "lifecycle"):
                 discover(root)
 
+    def test_catalogue_distinguishes_evaluation_from_lifecycle(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("unrecorded", "untested", "more-tests-needed", "tested"):
+                add_skill(root, "development", name)
+                if name != "unrecorded":
+                    package = root / "skills" / "development" / name
+                    metadata = f"status: experimental\nevaluation:\n  status: {name}\n"
+                    if name != "untested":
+                        metadata += "  note: Applied to a held-out case.\n"
+                        metadata += "  evidence: https://example.org/report\n"
+                    (package / "metadata.yaml").write_text(metadata, encoding="utf-8")
+            skills = discover(root)
+            records = {
+                record["name"]: record
+                for record in json.loads(render_json(skills))["skills"]
+            }
+            self.assertEqual({record["status"] for record in records.values()}, {"experimental"})
+            self.assertIsNone(records["unrecorded"]["evaluation"])
+            self.assertEqual(records["untested"]["evaluation"]["status"], "untested")
+            self.assertEqual(records["more-tests-needed"]["evaluation"]["status"], "more-tests-needed")
+            self.assertEqual(records["tested"]["evaluation"]["evidence"], "https://example.org/report")
+            markdown = render_markdown(skills)
+            self.assertIn("| Unrecorded |", markdown)
+            self.assertIn("| Untested |", markdown)
+            self.assertIn("[More tests needed](https://example.org/report)", markdown)
+            self.assertIn("[Tested](https://example.org/report)", markdown)
+
+    def test_invalid_evaluation_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            add_skill(root, "development", "local-skill")
+            path = root / "skills" / "development" / "local-skill" / "metadata.yaml"
+            for source in (
+                "  status: certified\n",
+                "  status: tested\n  note: Trial passed.\n",
+                "  status: more-tests-needed\n  note: One trial.\n  evidence: javascript:alert(1)\n",
+            ):
+                with self.subTest(source=source):
+                    path.write_text("evaluation:\n" + source, encoding="utf-8")
+                    with self.assertRaisesRegex(LibraryError, "evaluation"):
+                        discover(root)
+
     def test_unknown_collection_member_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

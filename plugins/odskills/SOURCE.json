@@ -141,7 +141,7 @@
       "source": "skills/mathematics/discover-cross-project-connections/examples/partition-and-fibres.md"
     },
     "skills/discover-cross-project-connections/metadata.yaml": {
-      "sha256": "56ede034a5a721ef767b9f7d500ed490569cb63b171d380d67ca8cb91f9aaa30",
+      "sha256": "9bb6e4f8eae68fd7f503ee7c55e2a3b67988631c4194235a5049aac22697d1c2",
       "source": "skills/mathematics/discover-cross-project-connections/metadata.yaml"
     },
     "skills/discover-cross-project-connections/references/handoff-and-comparison.md": {
@@ -329,7 +329,7 @@
       "source": "skills/mathematics/reframe-mathematical-bottleneck/SKILL.md"
     },
     "skills/reframe-mathematical-bottleneck/metadata.yaml": {
-      "sha256": "b9220e2dc7fd934af8b2987573392f323b6bc0c31333cfbec7b344855e48b64a",
+      "sha256": "f5c47bd7c4d7d6390cd96947d9f767081162902219668814a57af8ac66f6d009",
       "source": "skills/mathematics/reframe-mathematical-bottleneck/metadata.yaml"
     },
     "skills/reframe-mathematical-bottleneck/references/amplify-invariants-through-lifts.md": {
@@ -456,7 +456,7 @@
   "canonical_package_count": 21,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "0560a44acfb828b0ace7b6d78f687bb2deaa86de92eaeb0679100b87acd3fd58",
+  "input_sha256": "82cde32a6dd7292e761d7d2eed8d0c22cb8d2e01db53d34fe0262a189f89563d",
   "schema_version": 1,
-  "version": "0.1.0-experimental.h0560a44acfb8"
+  "version": "0.1.0-experimental.h82cde32a6dd7"
 }

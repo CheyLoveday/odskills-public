@@ -3,7 +3,8 @@
 Open, reusable agent skills for software development, mathematics, Lean and
 skill engineering. Each skill is an experimental, portable `SKILL.md` package.
 Browse the [catalogue](catalogue/skills.md) and choose the skill that fits the
-outcome you want.
+outcome you want. The [evaluation labels](CONTRIBUTING.md#evaluation-labels)
+show which behavioral checks are recorded and where more testing is needed.
 
 | Area | Examples |
 | --- | --- |
