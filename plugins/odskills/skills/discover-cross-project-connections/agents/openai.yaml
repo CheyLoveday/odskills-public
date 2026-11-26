@@ -1,0 +1,6 @@
+interface:
+  display_name: "Discover cross-project connections"
+  short_description: "Find source-backed mathematical transfers"
+  default_prompt: "Use $discover-cross-project-connections to find and qualify the most useful links in this research portfolio."
+policy:
+  allow_implicit_invocation: false

@@ -691,5 +691,40 @@
     "target_skill": "lamport-plus",
     "should_activate": false,
     "reason": "Independent proof audit alone"
+  },
+  {
+    "id": "cross-project-explicit-1",
+    "prompt": "Use $odskills:discover-cross-project-connections to survey these independent research projects and find a source-backed receiving application.",
+    "target_skill": "discover-cross-project-connections",
+    "should_activate": true,
+    "reason": "Explicit selection for an unfixed receiver"
+  },
+  {
+    "id": "cross-project-explicit-2",
+    "prompt": "Use $discover-cross-project-connections to find which old open obligations these new findings could pay.",
+    "target_skill": "discover-cross-project-connections",
+    "should_activate": true,
+    "reason": "Explicit standalone request for portfolio reactivation"
+  },
+  {
+    "id": "cross-project-unselected-1",
+    "prompt": "Survey these independent research projects and find a source-backed receiving application.",
+    "target_skill": "discover-cross-project-connections",
+    "should_activate": false,
+    "reason": "This package is explicit-only even on a matching topic"
+  },
+  {
+    "id": "cross-project-nearmiss-1",
+    "prompt": "Audit whether my supplied proof of this fixed theorem preserves the boundary case.",
+    "target_skill": "discover-cross-project-connections",
+    "should_activate": false,
+    "reason": "Known receiving theorem and proof need a direct audit"
+  },
+  {
+    "id": "cross-project-nearmiss-2",
+    "prompt": "Fix a broken relative Markdown link between these project documents.",
+    "target_skill": "discover-cross-project-connections",
+    "should_activate": false,
+    "reason": "Markdown navigation belongs to link management"
   }
 ]
