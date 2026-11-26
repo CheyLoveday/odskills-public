@@ -48,6 +48,8 @@ the original target and current argument visible during the comparison.
    when a cover feeds a determinant or rank split. Use
    [incidence budgets and adverse controls](runbooks/incidence-budget-and-adverse-controls.md)
    when the remaining issue is a catalogue-to-target count or an exact residual.
+   Use the [map-first theorem-closure runbook](runbooks/map-quantitative-theorem-closure.md)
+   when several guarded results must pay distinct populations of the same goal.
 4. **Calculate the net bound and stop at the first missing link.** Put the
    original estimate and each candidate in the same inequality. Include
    analytic norms, denominator clearing, arithmetic losses and summation over
