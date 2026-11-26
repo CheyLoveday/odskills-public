@@ -140,7 +140,9 @@ For a [standalone installation](#install-one-skill) use
 `skills/mathematics/reframe-mathematical-bottleneck` at the reviewed pin.
 Invoke `$reframe-mathematical-bottleneck` for the standalone skill or
 `$odskills:reframe-mathematical-bottleneck` for the plugin. The complete
-package includes the seven method cards and three runbooks.
+package includes seven method cards. For a goal with several guarded regimes,
+use the [map-first theorem-closure runbook](../skills/mathematics/reframe-mathematical-bottleneck/runbooks/map-quantitative-theorem-closure.md)
+from a revision that includes it.
 
 ## First application
 
