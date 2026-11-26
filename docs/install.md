@@ -144,6 +144,22 @@ package includes seven method cards. For a goal with several guarded regimes,
 use the [map-first theorem-closure runbook](../skills/mathematics/reframe-mathematical-bottleneck/runbooks/map-quantitative-theorem-closure.md)
 from a revision that includes it.
 
+## Cross-project discovery
+
+Use `skills/mathematics/discover-cross-project-connections` as a
+[standalone package](#install-one-skill), or select it from the
+[Codex plugin](#install-the-codex-plugin) at a revision that includes it.
+
+To compare results on the same portfolio, give the same prompt and
+source snapshot to two fresh sessions. Select
+`$odskills:discover-cross-project-connections` in one session, or
+`$discover-cross-project-connections` for the standalone package.
+Omit that selection in the other session. The skill's invocation
+policy only exposes its instructions when explicitly selected. Keep
+other guidance and source access matched. Compare the qualified
+transfers, rejected matches, and remaining obligations.
+[Paired-run guide](../skills/mathematics/discover-cross-project-connections/references/handoff-and-comparison.md)
+
 ## First application
 
 Ask `audit-computational-evidence` to check a claimed exclusion for all

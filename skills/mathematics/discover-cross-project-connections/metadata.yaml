@@ -1,0 +1,13 @@
+status: experimental
+tags:
+  - mathematical-research
+  - cross-project
+  - theorem-transfer
+examples:
+  - Find which of these research projects can supply a result another can use.
+  - Find old proof obligations that a result in this portfolio now discharges.
+related:
+  - derive-structural-invariants
+  - lamport-plus
+  - reframe-mathematical-bottleneck
+  - audit-mathematical-claim

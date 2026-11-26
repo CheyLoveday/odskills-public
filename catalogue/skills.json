@@ -170,6 +170,29 @@
       ]
     },
     {
+      "description": "Find source-backed mathematical connections across research projects when the receiving theorem is still unknown. Use for portfolio discovery, shared proof mechanisms, and old consumers newly enabled by another project.",
+      "domain": "mathematics",
+      "example_requests": [
+        "Find which of these research projects can supply a result another can use.",
+        "Find old proof obligations that a result in this portfolio now discharges."
+      ],
+      "name": "discover-cross-project-connections",
+      "path": "skills/mathematics/discover-cross-project-connections/SKILL.md",
+      "related": [
+        "derive-structural-invariants",
+        "lamport-plus",
+        "reframe-mathematical-bottleneck",
+        "audit-mathematical-claim"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "mathematical-research",
+        "cross-project",
+        "theorem-transfer"
+      ]
+    },
+    {
       "description": "Design or refactor Python and scientific software into a functional core and imperative shell (FCIS) when domain logic is tangled with I/O or hidden state. Use for software boundary design; exclude conceptual explanations, tests of already-pure functions, and operations runbooks.",
       "domain": "development",
       "example_requests": [

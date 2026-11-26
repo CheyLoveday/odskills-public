@@ -12,6 +12,8 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import build_plugin as PLUGIN  # noqa: E402
@@ -72,6 +74,15 @@ class PluginTests(unittest.TestCase):
         self.assertEqual(manifest["version"], provenance["version"])
         self.assertNotIn("apps", manifest)
         self.assertNotIn("hooks", manifest)
+
+    def test_cross_project_discovery_remains_explicit_only(self):
+        config = (
+            ROOT
+            / "plugins/odskills/skills/discover-cross-project-connections"
+            / "agents/openai.yaml"
+        )
+        policy = yaml.safe_load(config.read_text(encoding="utf-8"))["policy"]
+        self.assertIs(policy["allow_implicit_invocation"], False)
 
     def test_render_is_deterministic_and_resource_changes_invalidate_version(self):
         with tempfile.TemporaryDirectory() as directory:
