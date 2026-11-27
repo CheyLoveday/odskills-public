@@ -50,6 +50,14 @@ with a known outcome. Check which instructions were read and the result.
 Record the pin and keep the previous verified package outside discovery paths
 if you upgrade.
 
+## Prepare a Lean contribution for GitHub
+
+The [Lean GitHub contribution collection](collections/lean-github-contributions.yaml)
+groups scoping, readiness assessment and PR lifecycle support with existing
+Lean and review specialists. Choose the skill for the current decision.
+A supplied contribution contract or current check record can carry the work
+forward. [Synthetic trials and replay cases](tests/upstream-contributions/README.md)
+
 ## Contribute
 
 Edit the selected package under `skills/<domain>/<id>/`. See the

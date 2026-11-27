@@ -279,6 +279,31 @@
       ]
     },
     {
+      "description": "Prepare, submit or track an upstream pull request under the contributor's authorization. Use to bind the submission to its qualified diff, interpret current GitHub CI and reviews, follow a merge, or advance dependent contributions. For a PR description alone use plan-development-work. For readiness evidence alone use qualify-upstream-contribution.",
+      "domain": "development",
+      "evaluation": {
+        "evidence": "TESTING.md",
+        "note": "Synthetic checks covered squash dependencies and merge queue evidence. Test the authorized remote workflow separately.",
+        "status": "more-tests-needed"
+      },
+      "example_requests": [
+        "Track this upstream PR through CI and review and check when the dependent PR can advance."
+      ],
+      "name": "manage-upstream-contribution",
+      "path": "skills/development/manage-upstream-contribution/SKILL.md",
+      "related": [
+        "qualify-upstream-contribution",
+        "review-code-change"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "upstream-contributions",
+        "pull-requests",
+        "github"
+      ]
+    },
+    {
       "description": "Turn a development objective into scoped tasks, dependency-ordered waves, acceptance checks and requested PR or review briefs. Use for actionable development planning or evidence-backed closeout writing; not for implementing the change, reviewing an actual diff or preparing a current-state handover alone.",
       "domain": "development",
       "evaluation": null,
@@ -380,6 +405,35 @@
       ]
     },
     {
+      "description": "Assess whether a concrete upstream change is ready for submission or review. Use to reconcile repository-required checks, Lean or other specialist evidence, and independent review against the exact candidate revision. For reviewing a diff alone use review-code-change. For submitting or tracking a pull request use manage-upstream-contribution.",
+      "domain": "development",
+      "evaluation": {
+        "evidence": "TESTING.md",
+        "note": "Synthetic tests accepted matched receipts and rejected stale and empty evidence. Test with live upstream verification.",
+        "status": "more-tests-needed"
+      },
+      "example_requests": [
+        "Decide whether this Lean patch is ready for upstream review using the build, axiom audit and review receipts."
+      ],
+      "name": "qualify-upstream-contribution",
+      "path": "skills/development/qualify-upstream-contribution/SKILL.md",
+      "related": [
+        "manage-upstream-contribution",
+        "review-code-change",
+        "select-code-tests",
+        "audit-lean-correspondence",
+        "audit-computational-evidence",
+        "profile-lean-kernel"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "upstream-contributions",
+        "verification",
+        "revision-binding"
+      ]
+    },
+    {
       "description": "Compare mathematical representations when a proof stalls on a weak quantitative bound, a singular chart, or an overstrong regularity requirement. Return a source-preserving choice with the net downstream bound and first remaining obligation. Use for a concrete proof bottleneck. Routine algebra, independent proof audit, and invariant discovery without a bound comparison have their own workflows.",
       "domain": "mathematics",
       "evaluation": {
@@ -431,6 +485,31 @@
         "code-review",
         "compatibility",
         "failure-paths"
+      ]
+    },
+    {
+      "description": "Decide which upstream repository and contribution to pursue. Use before taking on an external issue or pull request to check maintainer policy, find overlapping or already-merged work, and write a bounded contribution contract. For an existing change's readiness use qualify-upstream-contribution. For general development planning use plan-development-work.",
+      "domain": "development",
+      "evaluation": {
+        "evidence": "TESTING.md",
+        "note": "A synthetic duplicate and a documentation correction were classified correctly. Test live search and discovery separately.",
+        "status": "more-tests-needed"
+      },
+      "example_requests": [
+        "Check whether the upstream Lean issue is already covered and scope the smallest contribution I can make."
+      ],
+      "name": "scope-upstream-contribution",
+      "path": "skills/development/scope-upstream-contribution/SKILL.md",
+      "related": [
+        "qualify-upstream-contribution",
+        "plan-development-work"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "upstream-contributions",
+        "contribution-scope",
+        "maintainer-policy"
       ]
     },
     {

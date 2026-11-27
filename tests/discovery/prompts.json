@@ -726,5 +726,47 @@
     "target_skill": "discover-cross-project-connections",
     "should_activate": false,
     "reason": "Markdown navigation belongs to link management"
+  },
+  {
+    "id": "upstream-scope-match",
+    "prompt": "Before I pick up this mathlib issue, check whether anyone already did or proposed the work and tell me the smallest upstream contribution.",
+    "target_skill": "scope-upstream-contribution",
+    "should_activate": true,
+    "reason": "Check the target, overlap and contribution rules."
+  },
+  {
+    "id": "upstream-scope-near-miss",
+    "prompt": "Split this approved local refactor into three tasks with acceptance checks.",
+    "target_skill": "scope-upstream-contribution",
+    "should_activate": false,
+    "reason": "General development planning with no external contribution decision."
+  },
+  {
+    "id": "upstream-qualify-match",
+    "prompt": "Is this Lean change ready to send upstream? The green CI run is from before my rebase and the review names the old commit.",
+    "target_skill": "qualify-upstream-contribution",
+    "should_activate": true,
+    "reason": "Judge a concrete submission candidate against current, revision-bound evidence."
+  },
+  {
+    "id": "upstream-qualify-near-miss",
+    "prompt": "Review this diff for correctness and compatibility. I only want findings.",
+    "target_skill": "qualify-upstream-contribution",
+    "should_activate": false,
+    "reason": "Code review alone without an upstream readiness decision."
+  },
+  {
+    "id": "upstream-manage-match",
+    "prompt": "Follow the upstream PR through review and CI and tell me when its dependent PR can move off the parent branch.",
+    "target_skill": "manage-upstream-contribution",
+    "should_activate": true,
+    "reason": "Observe the remote lifecycle and verify the dependency before advancing."
+  },
+  {
+    "id": "upstream-manage-near-miss",
+    "prompt": "Draft a PR description from the diff and supplied test results. No lifecycle work.",
+    "target_skill": "manage-upstream-contribution",
+    "should_activate": false,
+    "reason": "Local prose drafting without submission preparation or lifecycle management."
   }
 ]

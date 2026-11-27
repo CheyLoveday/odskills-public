@@ -1,0 +1,14 @@
+status: experimental
+evaluation:
+  status: more-tests-needed
+  note: Synthetic checks covered squash dependencies and merge queue evidence. Test the authorized remote workflow separately.
+  evidence: TESTING.md
+tags:
+  - upstream-contributions
+  - pull-requests
+  - github
+examples:
+  - Track this upstream PR through CI and review and check when the dependent PR can advance.
+related:
+  - qualify-upstream-contribution
+  - review-code-change

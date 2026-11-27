@@ -1,0 +1,14 @@
+status: experimental
+evaluation:
+  status: more-tests-needed
+  note: A synthetic duplicate and a documentation correction were classified correctly. Test live search and discovery separately.
+  evidence: TESTING.md
+tags:
+  - upstream-contributions
+  - contribution-scope
+  - maintainer-policy
+examples:
+  - Check whether the upstream Lean issue is already covered and scope the smallest contribution I can make.
+related:
+  - qualify-upstream-contribution
+  - plan-development-work
