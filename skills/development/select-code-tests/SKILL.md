@@ -11,6 +11,10 @@ Use to select or assess evidence for a particular software change or public-beha
 
 ## Inputs
 
+For external contributions with unsettled receiving requirements, use
+`read-contribution-requirements` before choosing checks. Use a current intake to
+bind each check to its stage and owner.
+
 Identify the exact change and immutable revision or working state; public interfaces and consumers; risk and supported environments; existing tests and independent expected outcomes; permitted effects, test cost and required project gates. Distinguish local iteration from a candidate acceptance or release check. If the source or target is unavailable, report the missing evidence instead of inventing a check result.
 
 ## Procedure

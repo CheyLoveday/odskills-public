@@ -1,0 +1,16 @@
+status: experimental
+evaluation:
+  status: untested
+  note: A fresh-agent trial should distinguish a focused first Lean check from conditional PR-stage evidence.
+tags:
+  - contribution-intake
+  - pull-requests
+  - verification
+examples:
+  - Read the upstream rules, check who owns this claim and record the submission and acceptance requirements.
+  - Scope the first Lean check and record the discharge report as a later gate if the receiving route says so.
+related:
+  - plan-development-work
+  - select-code-tests
+  - review-code-change
+  - prepare-development-handover

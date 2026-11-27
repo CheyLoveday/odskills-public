@@ -21,6 +21,14 @@ flowchart LR
     S --> T["Pinned project or handoff"]
 ```
 
+## Start an external contribution
+
+Fill in the [contribution requirements intake](skills/development/read-contribution-requirements/assets/contribution-requirements.md)
+before planning the change or choosing verification.
+Use [read-contribution-requirements](skills/development/read-contribution-requirements/SKILL.md)
+to check the receiving repository’s claim rules, submission route and verification requirements.
+Carry each check’s stage and owner into the plan.
+
 ## Use one pinned skill
 
 Check out a reviewed commit or [release tag](https://github.com/CheyLoveday/odskills-public/releases).
