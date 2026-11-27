@@ -249,7 +249,7 @@
       "source": "skills/development/plan-development-work/LICENSE"
     },
     "skills/plan-development-work/SKILL.md": {
-      "sha256": "f6c4e09d88d165c9cc3accc267902059ddadd20b4a7c4daea2bb46b57f501775",
+      "sha256": "38e1687fe0a8213306a4575f9116828c0d9df3b7b570b4658aa8b1a0ce34d3e7",
       "source": "skills/development/plan-development-work/SKILL.md"
     },
     "skills/plan-development-work/assets/pr.md": {
@@ -323,6 +323,18 @@
     "skills/profile-lean-kernel/references/checker-boundaries.md": {
       "sha256": "8b9219b569602e5826c881a09fe67e926d8fa75536f0829d8b286ced180b7c24",
       "source": "skills/development/profile-lean-kernel/references/checker-boundaries.md"
+    },
+    "skills/read-contribution-requirements/SKILL.md": {
+      "sha256": "8e70219dd30d015ae886b0a2404f8aee4ff9358eb83c3ae3215d838d545414dc",
+      "source": "skills/development/read-contribution-requirements/SKILL.md"
+    },
+    "skills/read-contribution-requirements/assets/contribution-requirements.md": {
+      "sha256": "1c9c3436a3f808be92b220e885ec74db21595c9da1034ee3c4e7777edc2c8914",
+      "source": "skills/development/read-contribution-requirements/assets/contribution-requirements.md"
+    },
+    "skills/read-contribution-requirements/metadata.yaml": {
+      "sha256": "685efe95707059d5f03d56d189365346d63bbbaeb6407357782e780d22174ae5",
+      "source": "skills/development/read-contribution-requirements/metadata.yaml"
     },
     "skills/reframe-mathematical-bottleneck/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
@@ -401,7 +413,7 @@
       "source": "skills/development/select-code-tests/LICENSE"
     },
     "skills/select-code-tests/SKILL.md": {
-      "sha256": "b393b78502f4ef104e3f4fbb7b46653ef8df9dceed8dbb032046a44db5c50449",
+      "sha256": "58859238c299fc2a7d40379afa63855a2e03695ca3bf5db9f5ea21fc16c51ffe",
       "source": "skills/development/select-code-tests/SKILL.md"
     },
     "skills/select-code-tests/metadata.yaml": {
@@ -461,10 +473,10 @@
       "source": "skills/mathematics/write-lean-proofs/references/proof-form-choices.md"
     }
   },
-  "canonical_package_count": 21,
+  "canonical_package_count": 22,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "fb363b8110060743129d94cdc92dc9afddd4a44aa9e02ff634b28a5807ad6a7b",
+  "input_sha256": "98d6a1e735973fe2caf61082ae7e397814fb6d1064b362dc2c0923b657152129",
   "schema_version": 1,
-  "version": "0.1.0-experimental.hfb363b811006"
+  "version": "0.1.0-experimental.h98d6a1e73597"
 }

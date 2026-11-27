@@ -14,6 +14,10 @@ or `prepare-development-handover` for resuming work from its current state.
 
 ## Inputs
 
+For external contributions with unsettled receiving requirements, use
+`read-contribution-requirements` before planning. Carry forward a current intake’s
+submission constraints and staged requirements.
+
 Identify the requested outcome/documents, existing issue/plan and acceptance
 requirements, current source or supplied snapshot, relevant interfaces/callers,
 project instructions, preserved work and permissions already granted. Read

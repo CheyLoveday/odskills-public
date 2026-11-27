@@ -380,6 +380,34 @@
       ]
     },
     {
+      "description": "Read a receiving repository's rules before starting an external contribution. Use to check the claim or overlap, submission route and scope, assign checks to stages and owners, and choose the smallest verification run that meets the current requirement. Use existing intake evidence when the rules are already settled.",
+      "domain": "development",
+      "evaluation": {
+        "evidence": null,
+        "note": "A fresh-agent trial should distinguish a focused first Lean check from conditional PR-stage evidence.",
+        "status": "untested"
+      },
+      "example_requests": [
+        "Read the upstream rules, check who owns this claim and record the submission and acceptance requirements.",
+        "Scope the first Lean check and record the discharge report as a later gate if the receiving route says so."
+      ],
+      "name": "read-contribution-requirements",
+      "path": "skills/development/read-contribution-requirements/SKILL.md",
+      "related": [
+        "plan-development-work",
+        "select-code-tests",
+        "review-code-change",
+        "prepare-development-handover"
+      ],
+      "requirements": [],
+      "status": "experimental",
+      "tags": [
+        "contribution-intake",
+        "pull-requests",
+        "verification"
+      ]
+    },
+    {
       "description": "Compare mathematical representations when a proof stalls on a weak quantitative bound, a singular chart, or an overstrong regularity requirement. Return a source-preserving choice with the net downstream bound and first remaining obligation. Use for a concrete proof bottleneck. Routine algebra, independent proof audit, and invariant discovery without a bound comparison have their own workflows.",
       "domain": "mathematics",
       "evaluation": {

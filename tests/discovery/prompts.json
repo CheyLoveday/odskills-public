@@ -476,6 +476,34 @@
     "reason": "Visual rendering does not use local Markdown link checks"
   },
   {
+    "id": "contribution-requirements-intake",
+    "prompt": "Before we start an external parser fix, read the receiving repository's rules and issue, check for an existing claim or PR, and tell me what goes in the submission and who owns each check.",
+    "target_skill": "read-contribution-requirements",
+    "should_activate": true,
+    "reason": "Read primary receiving sources and produce a staged intake before planning."
+  },
+  {
+    "id": "contribution-requirements-lean-stage",
+    "prompt": "Prepare the intake for a Lean contribution. The pinned contributor guide specifies a named-module build, an exact-type check and an axiom report for the first candidate check. The PR guide says that if hosted discharge CI has not qualified yet, the contributor attaches a project-wide #discharges report to the PR. Hosted CI is still pending qualification. The claim board shows another contributor holds the original theorem, but the maintainer has approved this narrower sublemma under that claim. I have authorized only read-only intake. What is the first verification request and what is due later?",
+    "target_skill": "read-contribution-requirements",
+    "should_activate": true,
+    "reason": "Scope the focused first check, retain the conditional contributor-owned PR report and shared claim scope, and leave execution and any external action pending."
+  },
+  {
+    "id": "contribution-requirements-lean-first-gate-control",
+    "prompt": "We are preparing intake for a different Lean repository. Its pinned maintainer instructions expressly require a project-wide #discharges report in the first candidate check, along with the module build and axiom report. The contributor owns all three. Local Lean execution is authorized. Record the smallest first verification request under those rules.",
+    "target_skill": "read-contribution-requirements",
+    "should_activate": true,
+    "reason": "The first run must include the explicitly required project-wide report. A focused check alone would miss an applicable gate."
+  },
+  {
+    "id": "contribution-requirements-settled-control",
+    "prompt": "The intake is current for this exact branch, paths and claim. Choose the minimal regression tests for the changed parser; the submission rules are settled.",
+    "target_skill": "read-contribution-requirements",
+    "should_activate": false,
+    "reason": "The current intake already supplies the requirements. The remaining request is test selection."
+  },
+  {
     "id": "plan-development-work-direct",
     "prompt": "Plan this export change as small tasks and dependency-ordered waves with positive and adverse checks.",
     "target_skill": "plan-development-work",
