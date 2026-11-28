@@ -244,6 +244,18 @@
       "sha256": "a02cd42264914909f29fd8a86348032696e80266284b4beb9bb19dffda3d5173",
       "source": "skills/development/link-management/scripts/check_links.py"
     },
+    "skills/manage-upstream-contribution/SKILL.md": {
+      "sha256": "6dc9d10316f6f8f090164899e6e2fe40dfdfcd6705d1860dd5563d1e19607945",
+      "source": "skills/development/manage-upstream-contribution/SKILL.md"
+    },
+    "skills/manage-upstream-contribution/TESTING.md": {
+      "sha256": "1d89c50b891cc4ec3d1638dd595e4bd4dd4a999b1b23fe0ee14e51eb3c4005c4",
+      "source": "skills/development/manage-upstream-contribution/TESTING.md"
+    },
+    "skills/manage-upstream-contribution/metadata.yaml": {
+      "sha256": "a4f4a3737cfc52e033170f0d1851d8a61f7e63143a7ee728d0a806be7b0e25aa",
+      "source": "skills/development/manage-upstream-contribution/metadata.yaml"
+    },
     "skills/plan-development-work/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
       "source": "skills/development/plan-development-work/LICENSE"
@@ -324,6 +336,18 @@
       "sha256": "8b9219b569602e5826c881a09fe67e926d8fa75536f0829d8b286ced180b7c24",
       "source": "skills/development/profile-lean-kernel/references/checker-boundaries.md"
     },
+    "skills/qualify-upstream-contribution/SKILL.md": {
+      "sha256": "ba2e7f9c882817dfa1aa042c3c3a1df4ea24d9915170c3649c408d1c1712995a",
+      "source": "skills/development/qualify-upstream-contribution/SKILL.md"
+    },
+    "skills/qualify-upstream-contribution/TESTING.md": {
+      "sha256": "35910771bb7dc5e5a552d471a93c69cd1d6d252e2ea20d7f22fc24a5323ac1fc",
+      "source": "skills/development/qualify-upstream-contribution/TESTING.md"
+    },
+    "skills/qualify-upstream-contribution/metadata.yaml": {
+      "sha256": "eaa65396aa5b761b74a563764264efbdd6c107dee9df3d011d1c1000654a1c42",
+      "source": "skills/development/qualify-upstream-contribution/metadata.yaml"
+    },
     "skills/reframe-mathematical-bottleneck/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
       "source": "skills/mathematics/reframe-mathematical-bottleneck/LICENSE"
@@ -396,6 +420,18 @@
       "sha256": "e31ef2e51dc6e0b0c8464c5c41609efaf3aed3d4f58260400bb089ad5144f309",
       "source": "skills/development/review-code-change/metadata.yaml"
     },
+    "skills/scope-upstream-contribution/SKILL.md": {
+      "sha256": "26c818ca712ebd68ab5f41a790653783de8cfe25282f1b3665b10ef31668e933",
+      "source": "skills/development/scope-upstream-contribution/SKILL.md"
+    },
+    "skills/scope-upstream-contribution/TESTING.md": {
+      "sha256": "3be2ef899f6bc1a4f1c39fce0b2f5c829a602f78511a0ca6241f2ed4fb7a80f8",
+      "source": "skills/development/scope-upstream-contribution/TESTING.md"
+    },
+    "skills/scope-upstream-contribution/metadata.yaml": {
+      "sha256": "6c963fd3a9ee949acb3221dd3804ae6d944dc406ce1695a62c14d324377c7a7e",
+      "source": "skills/development/scope-upstream-contribution/metadata.yaml"
+    },
     "skills/select-code-tests/LICENSE": {
       "sha256": "59b025f219550d615aafc1163a3fdc8e44c4a8ca1cb35c22118d96a4d8d15cfd",
       "source": "skills/development/select-code-tests/LICENSE"
@@ -461,10 +497,10 @@
       "source": "skills/mathematics/write-lean-proofs/references/proof-form-choices.md"
     }
   },
-  "canonical_package_count": 21,
+  "canonical_package_count": 24,
   "generation_command": "python tools/build_plugin.py --output plugins/odskills",
   "generator_sha256": "e0626109a5959cc3bb1ea3cc8841e27163aec418df931ce59cfbb29a3114e443",
-  "input_sha256": "fb363b8110060743129d94cdc92dc9afddd4a44aa9e02ff634b28a5807ad6a7b",
+  "input_sha256": "a4f29acf6036376b64511b12172d5ae337bcbda67163582a5337d69912ea6d0f",
   "schema_version": 1,
-  "version": "0.1.0-experimental.hfb363b811006"
+  "version": "0.1.0-experimental.ha4f29acf6036"
 }

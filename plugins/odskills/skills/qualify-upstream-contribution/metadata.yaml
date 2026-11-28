@@ -1,0 +1,18 @@
+status: experimental
+evaluation:
+  status: more-tests-needed
+  note: Synthetic and mathlib snapshots distinguished current from stale receipts. Independent execution and native discovery remain open.
+  evidence: TESTING.md
+tags:
+  - upstream-contributions
+  - verification
+  - revision-binding
+examples:
+  - Decide whether this Lean patch is ready for upstream review using the build, axiom audit and review receipts.
+related:
+  - manage-upstream-contribution
+  - review-code-change
+  - select-code-tests
+  - audit-lean-correspondence
+  - audit-computational-evidence
+  - profile-lean-kernel

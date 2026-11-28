@@ -1,0 +1,14 @@
+status: experimental
+evaluation:
+  status: more-tests-needed
+  note: A mathlib replay reconciled GitHub and Bors and withheld landing when destination evidence was missing. Live writes remain open.
+  evidence: TESTING.md
+tags:
+  - upstream-contributions
+  - pull-requests
+  - github
+examples:
+  - Track this upstream PR through CI and review and check when the dependent PR can advance.
+related:
+  - qualify-upstream-contribution
+  - review-code-change
