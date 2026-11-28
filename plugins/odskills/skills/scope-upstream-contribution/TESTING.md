@@ -8,5 +8,13 @@ and kept the work local.
 
 Replay with `tests/upstream-contributions/scoping.md` from the source repository.
 Supply that case with the package's `SKILL.md`. The source test record retains
-the tested hashes and decisions. Reachability and results of live upstream
-search, native discovery and comparative value remain unverified.
+the tested hashes and decisions.
+
+## Mathlib replay
+
+A fresh evaluator replayed mathlib issue #43855 and found the existing
+notation fix in #43877. It offered internal facts for the contributor’s own
+comment, in line with mathlib’s policy. The restricted case exercised the
+same boundary with an explicit request for a draft. See
+`tests/upstream-contributions/mathlib/README.md` in the source repository.
+Native discovery and independent live search remain unverified.

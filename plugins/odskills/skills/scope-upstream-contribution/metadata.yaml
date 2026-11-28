@@ -1,7 +1,7 @@
 status: experimental
 evaluation:
   status: more-tests-needed
-  note: A synthetic duplicate and a documentation correction were classified correctly. Test live search and discovery separately.
+  note: Synthetic and mathlib snapshots exercised overlap and venue policy. Native discovery and fresh live search remain open.
   evidence: TESTING.md
 tags:
   - upstream-contributions

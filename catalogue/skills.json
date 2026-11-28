@@ -283,7 +283,7 @@
       "domain": "development",
       "evaluation": {
         "evidence": "TESTING.md",
-        "note": "Synthetic checks covered squash dependencies and merge queue evidence. Test the authorized remote workflow separately.",
+        "note": "A mathlib replay reconciled GitHub and Bors and withheld landing when destination evidence was missing. Live writes remain open.",
         "status": "more-tests-needed"
       },
       "example_requests": [
@@ -409,7 +409,7 @@
       "domain": "development",
       "evaluation": {
         "evidence": "TESTING.md",
-        "note": "Synthetic tests accepted matched receipts and rejected stale and empty evidence. Test with live upstream verification.",
+        "note": "Synthetic and mathlib snapshots distinguished current from stale receipts. Independent execution and native discovery remain open.",
         "status": "more-tests-needed"
       },
       "example_requests": [
@@ -492,7 +492,7 @@
       "domain": "development",
       "evaluation": {
         "evidence": "TESTING.md",
-        "note": "A synthetic duplicate and a documentation correction were classified correctly. Test live search and discovery separately.",
+        "note": "Synthetic and mathlib snapshots exercised overlap and venue policy. Native discovery and fresh live search remain open.",
         "status": "more-tests-needed"
       },
       "example_requests": [

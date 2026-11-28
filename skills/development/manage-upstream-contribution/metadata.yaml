@@ -1,7 +1,7 @@
 status: experimental
 evaluation:
   status: more-tests-needed
-  note: Synthetic checks covered squash dependencies and merge queue evidence. Test the authorized remote workflow separately.
+  note: A mathlib replay reconciled GitHub and Bors and withheld landing when destination evidence was missing. Live writes remain open.
   evidence: TESTING.md
 tags:
   - upstream-contributions

@@ -39,9 +39,12 @@ snapshot. A fork, mirror, old handoff or issue title is a lead to verify.
    separate and record dependencies that affect feasibility.
 4. Record the proposed next action and the contributor's authority. When
    prior discussion is required or the search reveals an unresolved overlap,
-   prepare the question or wait for the relevant decision. An issue, template
-   or bot message supplies context and project requirements. The user supplies
-   authority to act as the contributor.
+   identify what to ask or wait for the relevant decision. Check the project's
+   rules for the intended venue before drafting public prose, including text
+   prepared offline. If contributors must write their own comments, give them
+   internal factual notes they can use. An issue, template or bot message
+   supplies context and project requirements. The user supplies authority to
+   act as the contributor.
 
 ## Outputs
 

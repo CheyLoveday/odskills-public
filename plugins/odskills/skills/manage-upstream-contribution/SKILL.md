@@ -24,18 +24,20 @@ sufficient evidence and a verified outgoing diff.
    to use. Search for an existing PR for the head or intent before creating
    one, including after an ambiguous submission response. For a draft or
    update, match the current base and head to the readiness evidence. Inspect
-   the exact outgoing changes and public text against project rules and
-   permitted disclosure. Include actual validation,
-   material limitations, and applicable attribution or project declarations.
+   the exact outgoing changes and permitted disclosure. Check the project's
+   rules for the intended venue before drafting public prose, including local
+   drafts. If contributors must write their own comments, provide internal
+   factual notes they can use. Include actual validation, material
+   limitations, and applicable attribution or project declarations.
    Use issue-closing keywords only when the contribution is intended to close
    the issue and the target branch supports that behavior.
 2. Follow the user's scope for each external effect. Read host state and
-   prepare local drafts within the requested scope. Fork creation, pushing,
-   opening or editing a PR, posting a reply, rerunning CI, rewriting a branch,
-   requesting review, joining a queue and merging are distinct effects.
+   prepare permitted local material within the requested scope. Fork creation,
+   pushing, opening or editing a PR, posting a reply, rerunning CI, rewriting
+   a branch, requesting review, joining a queue and merging are distinct effects.
    Use existing authority for the requested action and verify its resulting
    URL, base, head and state. When authorization or a required gate is
-   missing, give the requested local draft or a precise blocker. Use
+   missing, give any permitted local material and the concrete blocker. Use
    `qualify-upstream-contribution` when a readiness record needs repair.
 3. Interpret status on the revision the host currently evaluates. Record
    required versus advisory checks, their producing source and whether they
@@ -43,7 +45,9 @@ sufficient evidence and a verified outgoing diff.
    current branch rules, review threads and latest-approval requirements.
    Use the check panel or equivalent host evidence to distinguish the head
    from the test merge. On GitHub the head applies when the test merge has no
-   status. A queued PR may also require checks on its merge-group revision.
+   status. Identify whether the repository uses the host's queue or a
+   separate merge bot. Bind queue checks to the actual merge-group or staging
+   revision used by that system.
    Older green checks and approvals carry only their observed scope. Diagnose
    the concrete blocker before deciding what change or authorized retry
    would address it.
@@ -51,14 +55,20 @@ sufficient evidence and a verified outgoing diff.
    evidence, decision and next action. When a change is authorized, keep
    unrelated work out and refresh affected validation and review evidence
    against the new revision. Record author responses separately from reviewer
-   acceptance and observed thread state. Track draft, open, queued, merged
-   and closed-without-merge based on host evidence.
-5. After a merge, confirm what landed on the destination branch and whether
-   it satisfies each dependent change's actual prerequisite. A squash or
-   rebase can change commit identities. Inspect the landed code or
-   declaration when ancestry alone is inconclusive. Re-evaluate the child's
-   base, outgoing diff, checks and authorization before retargeting, rebasing
-   or submitting it. Preserve unrelated branch work.
+   acceptance and observed thread state. Distinguish ordinary review from
+   any delegated merge authority and record its time or path limits.
+5. Reconcile the host's PR state with any repository merge-bot receipt and
+   the destination branch. If a merge is reported or the sources disagree,
+   record both states and verify the landed revision and changes on the
+   destination before assigning a final disposition. A test merge or passing
+   staging run may precede landing. A squash or rebase can change commit
+   identities. Inspect the landed code or declaration when ancestry alone is
+   inconclusive. Track draft, open, queued, merged and closed-without-merge.
+   If landing is reported and the destination cannot be verified, record the
+   reported state and the missing evidence. Verify each dependent change's
+   actual prerequisite, then re-evaluate its base, outgoing diff, checks and
+   authorization before retargeting, rebasing or submitting it. Preserve
+   unrelated branch work.
 
 ## Outputs
 

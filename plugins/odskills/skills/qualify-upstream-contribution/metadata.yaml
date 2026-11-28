@@ -1,7 +1,7 @@
 status: experimental
 evaluation:
   status: more-tests-needed
-  note: Synthetic tests accepted matched receipts and rejected stale and empty evidence. Test with live upstream verification.
+  note: Synthetic and mathlib snapshots distinguished current from stale receipts. Independent execution and native discovery remain open.
   evidence: TESTING.md
 tags:
   - upstream-contributions

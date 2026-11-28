@@ -7,6 +7,9 @@ criteria before drafting and compared the returned decisions against them.
 The evaluators shared the host and filesystem. They were instructed to read
 only the supplied files and received no acceptance criteria.
 
+The [mathlib replay](mathlib/README.md) separately exercises actual public
+contribution records and the revised venue and merge guidance.
+
 ## Decisions observed
 
 | Case | Result |
